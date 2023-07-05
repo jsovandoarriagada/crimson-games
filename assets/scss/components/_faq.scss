@@ -1,0 +1,57 @@
+@import '../utilities/extends';
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+/* FAQ */
+.faq {
+  @include flex-direction(column, 0);
+  cursor: pointer;
+  padding-bottom: 1.5rem;
+  border-bottom: $xxx-small solid $cadet-blue;
+
+  &.active span {
+    transform: rotate(180deg);
+  }
+
+  &.active &__answer {
+    max-height: 30rem;
+    animation: fade 1s ease-in-out;
+  }
+
+  // FAQ: QUESTION
+  &__question {
+    @include flex-direction(row, 0);
+    @include flex-alignment(space-between, center);
+
+    span {
+      @include font($xx-large, 300);
+      transition: transform 0.5s ease-in;
+    }
+  }
+
+  // FAQ: ANSWER
+  &__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+
+    p {
+      @include colors(none, $cadet-blue);
+
+      padding-top: $small;
+      line-height: 1.3;
+    }
+  }
+}
+
+/* FAQ: ANIMATION */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

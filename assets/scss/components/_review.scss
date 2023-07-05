@@ -1,0 +1,50 @@
+@import '../utilities/extends';
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+/* REVIEW */
+.review {
+  @extend %default-transition;
+  @include colors($mako, $athens-gray);
+  @include flex-direction(column, $small);
+  border-radius: $small;
+  padding: $small;
+
+  &:hover {
+    @include shadow-inset($xx-small, $fruit-salad);
+  }
+
+  // REVIEW: HEADER
+  &__header {
+    @include flex-direction(row, 0);
+    @include flex-alignment(space-between, center);
+
+    img {
+      @include dimensions(auto, $medium);
+    }
+
+    // REVIEW: USER
+    .review__user {
+      @include flex-direction(row, $xx-small);
+      @include flex-alignment(center, center);
+
+      span {
+        @include font($xx-large, 300);
+      }
+
+      &--name {
+        padding-top: $xx-small;
+      }
+    }
+
+    // REVIEW: DATE
+    .review__date {
+      padding-top: $xx-small;
+    }
+  }
+
+  // REVIEW: BODY
+  &__body {
+    @include colors(none, $cadet-blue);
+  }
+}

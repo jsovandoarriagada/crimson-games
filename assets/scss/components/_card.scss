@@ -1,0 +1,86 @@
+@import '../utilities/extends';
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+/* CARD */
+.card {
+  @extend %default-transition;
+  @include colors($mako, none);
+  @include dimensions(28rem, auto);
+  @include flex-direction(column, $small);
+  @include flex-alignment(center, start);
+  border-radius: $small;
+  position: relative;
+  scroll-snap-align: start;
+  user-select: none;
+
+  &:hover {
+    background-color: $trout;
+  }
+
+  img {
+    border-radius: $small $small 0 0;
+  }
+}
+
+/* CARD: TITLE */
+.card__title {
+  @include dimensions(100%, 2.8rem);
+  padding: 0 $small;
+  line-height: 1;
+}
+
+/* CARD: GENRES */
+.card__genres {
+  @include flex-direction(row, $x-small);
+  margin-left: $small;
+}
+
+.card__genre {
+  @include colors(none, $athens-gray);
+  @include dimensions(fit-content, auto);
+  padding: $small;
+  border: $xx-small solid $athens-gray;
+  border-radius: $small;
+}
+
+/* CARD: BOTTOM */
+.card__bottom {
+  @include dimensions(100%, auto);
+  @include flex-direction(row, 0);
+  @include flex-alignment(space-between, center);
+
+  // CARD: PRICE
+  .card__price {
+    @include dimensions(auto, $x-large);
+    @include flex-direction(row, $x-small);
+    @include flex-alignment(center, center);
+    margin-left: $small;
+    margin-bottom: $small;
+  }
+
+  .card__price--base {
+    @include colors(none, $cadet-blue);
+    text-decoration: line-through;
+  }
+
+  // CARD: CART
+  .card__cart {
+    @include colors(transparent, $athens-gray);
+    margin-right: $small;
+    margin-bottom: $small;
+    outline: none;
+    padding: 0;
+
+    span {
+      @extend %default-transition;
+      @include colors(transparent, $cadet-blue);
+      @include font($xx-large, 300);
+      cursor: pointer;
+
+      &:hover {
+        @include colors(transparent, $athens-gray);
+      }
+    }
+  }
+}

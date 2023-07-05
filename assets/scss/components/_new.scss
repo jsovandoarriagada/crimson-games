@@ -1,0 +1,37 @@
+@import '../utilities/extends';
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+/* NEW */
+.new {
+  @extend %default-transition;
+  @include flex-direction(column, $small);
+  position: relative;
+  border-radius: $small;
+
+  &:hover {
+    box-shadow: inset 0 0 0 $xx-small $yellow-orange;
+  }
+
+  &__img {
+    @extend %default-transition;
+    border-radius: $small;
+    opacity: 0.5;
+  }
+
+  &__text {
+    @include flex-direction(column, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: $small;
+
+    .new__date {
+      color: $athens-gray;
+    }
+
+    .new__title {
+      @include colors(none, $yellow-orange);
+    }
+  }
+}

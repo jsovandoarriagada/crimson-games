@@ -1,0 +1,100 @@
+@import '../utilities/extends';
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+/* FEATURED */
+.featured {
+  @include dimensions(100%, 36rem);
+  @include flex-direction(row, 0);
+  @include flex-alignment(center, center);
+  background-image: url('../img/featured/background.webp');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+
+  &__shadow {
+    @include dimensions(100%, 36rem);
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__container {
+    @include dimensions(120rem, auto);
+    @include flex-direction(column, $small);
+    @include flex-alignment(center, start);
+    position: relative;
+    z-index: 2;
+
+    .featured__logo {
+      @include dimensions(20rem, 7rem);
+    }
+
+    .featured__quote {
+      @include flex-direction(column, $x-small);
+
+      &--text {
+        font-style: italic;
+        line-height: 1.1;
+
+        span {
+          @include colors(none, $athens-gray);
+          display: block;
+        }
+      }
+
+      &--author {
+        color: $cadet-blue;
+      }
+    }
+
+    .featured__genres {
+      @include flex-direction(row, $x-small);
+
+      .featured__genre {
+        @include colors(none, $athens-gray);
+        @include dimensions(fit-content, auto);
+        padding: $small;
+        border: $xx-small solid $cadet-blue;
+        border-radius: $small;
+      }
+    }
+
+    .featured__price {
+      @include dimensions(auto, $xx-large);
+      @include flex-direction(row, $x-small);
+      @include flex-alignment(center, center);
+
+      &--base {
+        @include colors(none, $cadet-blue);
+        text-decoration: line-through;
+        align-self: center;
+      }
+    }
+
+    .featured__cart {
+      @include colors($cornflower-blue, $athens-gray);
+      @include flex-direction(row, $x-small);
+      @include font($medium, 400);
+
+      span {
+        @include font($xx-large, 300);
+      }
+
+      p {
+        padding-top: $xx-small;
+      }
+    }
+  }
+
+  @media (max-width: 78.5rem) {
+    &__container {
+      @include dimensions(100%, auto);
+      padding: 0 $x-large;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import '../utilities/extends';
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+/* STORE */
+.store {
+  @include dimensions(120rem, auto);
+  @include flex-direction(column, $xxx-large);
+  @include flex-alignment(center, start);
+  margin-bottom: $x-large;
+
+  &__title {
+    @include flex-direction(row, 0);
+    @include flex-alignment(space-between, center);
+    @include font($medium, 400);
+    align-self: flex-start;
+    width: 100%;
+
+    &--left {
+      @include flex-direction(row, $small);
+
+      p {
+        margin-top: $xx-small;
+      }
+
+      span {
+        @include font($xx-large, 300);
+        color: $fruit-salad;
+      }
+    }
+
+    &--right {
+      @include flex-direction(row, $x-small);
+
+      span {
+        @extend %default-transition;
+        @include font($xx-large, 300);
+        cursor: pointer;
+        color: $cadet-blue;
+
+        &:hover {
+          color: $athens-gray;
+        }
+      }
+    }
+  }
+
+  &__showcase {
+    @include dimensions(100%, auto);
+    @include flex-direction(column, $x-small);
+
+    &--cards {
+      @include dimensions(100%, auto);
+      @include grid-template(18rem, $small);
+
+      .card {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: 42.5rem) {
+      &--cards {
+        grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+      }
+    }
+  }
+}
+
+@media (max-width: 78.5rem) {
+  .store {
+    @include dimensions(100%, auto);
+    padding: 0 $x-large;
+  }
+}

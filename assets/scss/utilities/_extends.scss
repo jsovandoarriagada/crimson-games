@@ -1,0 +1,9 @@
+// EXTENDS
+%grid-center {
+  display: grid;
+  place-items: center;
+}
+
+%default-transition {
+  transition: all 0.3s;
+}
