@@ -69,7 +69,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 
@@ -228,7 +228,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 
@@ -334,7 +334,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 
@@ -430,7 +430,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 
@@ -485,7 +485,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 
@@ -524,7 +524,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 
@@ -574,7 +574,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 
@@ -655,7 +655,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 
@@ -890,13 +890,11 @@ body {
       display: flex;
       flex-direction: column;
       gap: 1rem; }
-    .bestselling .bestsellers__left {
-      margin-bottom: 1rem; }
   @media (max-width: 46.25rem) {
     .bestselling .bestsellers {
       display: flex;
       flex-direction: column;
-      gap: 0; } }
+      gap: 1rem; } }
 
 /* REVIEWS */
 .reviews {
@@ -927,13 +925,6 @@ body {
     grid-auto-rows: auto;
     gap: 1rem;
     margin-top: 4rem; }
-  .reviews__trustpilot {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-top: 1rem; }
-    .reviews__trustpilot img {
-      width: auto;
-      height: 1.8rem; }
 
 /* FAQS */
 .faqs {
@@ -963,7 +954,7 @@ body {
 .playstation__slider--left,
 .playstation__slider--right,
 .xbox__slider--left,
-.xbox__slider--right, .reviews__trustpilot {
+.xbox__slider--right {
   display: grid;
   place-items: center; }
 

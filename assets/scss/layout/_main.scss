@@ -178,15 +178,11 @@
       @include dimensions(100%, auto);
       @include flex-direction(column, $small);
     }
-
-    &__left {
-      margin-bottom: $small;
-    }
   }
 
   @media (max-width: 46.25rem) {
     .bestsellers {
-      @include flex-direction(column, 0);
+      @include flex-direction(column, $small);
     }
   }
 }
@@ -215,17 +211,6 @@
   &__showcase {
     @include grid-template(32rem, $small);
     margin-top: $xxx-large;
-  }
-
-  // REVIEWS: TRUSTPILOT
-  &__trustpilot {
-    @extend %grid-center;
-    @include font(1.2rem, 400);
-    margin-top: $small;
-
-    img {
-      @include dimensions(auto, $large);
-    }
   }
 }
 
