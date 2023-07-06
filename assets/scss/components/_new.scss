@@ -10,7 +10,7 @@
   border-radius: $small;
 
   &:hover {
-    box-shadow: inset 0 0 0 $xx-small $yellow-orange;
+    @include shadow-inset($xx-small, $yellow-orange);
   }
 
   &__img {
