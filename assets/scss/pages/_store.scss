@@ -5,49 +5,42 @@
 /* STORE */
 .store {
   @include dimensions(120rem, auto);
-  @include flex-direction(column, $xxx-large);
+  @include flex-direction(column, 0.8rem);
   @include flex-alignment(center, start);
   margin-bottom: $x-large;
 
+  // NEWS: TITLE
   &__title {
-    @include flex-direction(row, 0);
-    @include flex-alignment(space-between, center);
+    @include flex-direction(row, $small);
+    @include flex-alignment(center, center);
     @include font($medium, 400);
     align-self: flex-start;
-    width: 100%;
 
-    &--left {
-      @include flex-direction(row, $small);
-
-      p {
-        margin-top: $xx-small;
-      }
-
-      span {
-        @include font($xx-large, 300);
-        color: $fruit-salad;
-      }
-    }
-
-    &--right {
-      @include flex-direction(row, $x-small);
-
-      span {
-        @extend %default-transition;
-        @include font($xx-large, 300);
-        cursor: pointer;
-        color: $cadet-blue;
-
-        &:hover {
-          color: $athens-gray;
-        }
-      }
+    span {
+      @include colors(none, $fruit-salad);
+      @include font($xx-large, 300);
     }
   }
 
   &__showcase {
     @include dimensions(100%, auto);
-    @include flex-direction(column, $x-small);
+    @include flex-direction(column, $small);
+
+    &--menu {
+      @include flex-direction(row, $x-small);
+      @include flex-alignment(flex-end, center);
+
+      span {
+        @extend %default-transition;
+        @include colors(none, $cadet-blue);
+        @include font($xx-large, 300);
+        cursor: pointer;
+
+        &:hover {
+          @include colors(none, $athens-gray);
+        }
+      }
+    }
 
     &--cards {
       @include dimensions(100%, auto);
