@@ -72,7 +72,7 @@
 
         &--input {
           @include colors(transparent, $athens-gray);
-          @include dimensions(15rem, auto);
+          @include dimensions(16rem, auto);
           @include font($regular, 500);
           font-family: "Poppins", sans-serif;
           outline: none;
