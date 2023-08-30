@@ -147,7 +147,7 @@
       "id": 14,
       "platform": "playstation",
       "image": "./assets/img/playstation/the-last-of-us.webp",
-      "title": "The Last of Us: Part I",
+      "title": "The Last of Us",
       "genres": ["Shooter", "Adventure"],
       "prices": {
         "base": "$50",
@@ -202,7 +202,7 @@
       "id": 19,
       "platform": "switch",
       "image": "./assets/img/switch/tears-of-the-kingdom.webp",
-      "title": "Legend of Zelda: Tears of the Kingdom",
+      "title": "TLOZ: Tears of the Kingdom",
       "genres": ["Adventure", "Action"],
       "prices": {
         "base": "$60",
@@ -268,7 +268,7 @@
       "id": 25,
       "platform": "switch",
       "image": "./assets/img/switch/breath-of-the-wild.webp",
-      "title": "Legend of Zelda: Breath of the Wild",
+      "title": "TLOZ: Breath of the Wild",
       "genres": ["Adventure", "Action"],
       "prices": {
         "base": "$60",
@@ -290,7 +290,7 @@
       "id": 27,
       "platform": "switch",
       "image": "./assets/img/switch/xenoblade-chronicles.webp",
-      "title": "Xenoblade Chronicles: Definitive Edition",
+      "title": "Xenoblade Chronicles",
       "genres": ["Action RPG", "Adventure"],
       "prices": {
         "base": "$50",
@@ -642,7 +642,7 @@
       "id": 59,
       "platform": "pc",
       "image": "./assets/img/pc/the-legend-of-heroes.webp",
-      "title": "Legend of Heroes: Trails to Azure",
+      "title": "TLOH: Trails to Azure",
       "genres": ["RPG", "Strategy"],
       "prices": {
         "base": "$30",
