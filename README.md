@@ -1,9 +1,10 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/jsovandoarriagada/crimson-games">
-    <img src="https://i.ibb.co/121jZxk/symbol.webp" alt="Logo" width="60" height="60">
-  </a>
-  <h2 align="center">Crimson Games</h2>
+  <img src="https://i.ibb.co/121jZxk/symbol.webp" alt="Logo" width="auto" height="60">
+</div>
+<br/>
+<div align="center">
+  <img src="https://i.ibb.co/SmWXgWq/logo.webp" alt="Logo" width="auto" height="24">
 </div>
 <!-- AUTHOR -->
 <h2>Author</h2>
