@@ -1,5 +1,5 @@
-@import '../utilities/mixins';
-@import '../utilities/variables';
+@import "../utilities/mixins";
+@import "../utilities/variables";
 
 /* GENERAL */
 html {
@@ -10,7 +10,9 @@ html {
 body {
   @include colors($baltic-sea, $athens-gray);
   @include font($regular, 400);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0.1rem 0.1rem black;
+  overflow-y: scroll;
 
   a {
     @include colors(none, $athens-gray);
@@ -25,7 +27,8 @@ body {
     @include flex-direction(row, $x-small);
     @include flex-alignment(center, center);
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0.1rem 0.1rem black;
     border-radius: $small;
     padding: $small;
     border: none;
@@ -43,6 +46,7 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-variation-settings: "FILL" 1;
   }
 
   .layout {

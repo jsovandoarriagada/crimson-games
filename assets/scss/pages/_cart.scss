@@ -1,0 +1,32 @@
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+/* CART */
+.cart {
+  @include dimensions(120rem, auto);
+  @include flex-direction(column, 4rem);
+  @include flex-alignment(center, start);
+  margin: $xxx-large 0 $x-large 0;
+  scroll-margin-top: 9rem;
+  display: none;
+
+  // CART: TITLE
+  &__title {
+    @include flex-direction(row, $small);
+    @include flex-alignment(flex-start, center);
+    @include font($medium, 400);
+    align-self: flex-start;
+
+    span {
+      @include colors(none, $cornflower-blue);
+      @include font($xx-large, 300);
+    }
+  }
+}
+
+@media (max-width: 78.5rem) {
+  .cart {
+    @include dimensions(100%, auto);
+  }
+}

@@ -1,6 +1,6 @@
-@import '../utilities/extends';
-@import '../utilities/mixins';
-@import '../utilities/variables';
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../utilities/variables";
 
 /* NEW */
 .new {
@@ -32,6 +32,7 @@
 
     .new__title {
       @include colors(none, $yellow-orange);
+      text-shadow: 0.1rem 0.1rem black;
     }
   }
 }

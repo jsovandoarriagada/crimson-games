@@ -1,0 +1,46 @@
+{
+  "reviews": [
+    {
+      "image": "./assets/img/reviews/5-stars.webp",
+      "stars": "5 Stars",
+      "user": "Sarah G.",
+      "date": "1 day ago",
+      "content": "I've been purchasing game keys from Crimson Games for over a year now, and I've never been disappointed. The selection is fantastic, and the prices are competitive. The best part is how fast I receive my keys after purchasing. Highly recommended!"
+    },
+    {
+      "image": "./assets/img/reviews/5-stars.webp",
+      "stars": "5 Stars",
+      "user": "Mark R.",
+      "date": "2 days ago",
+      "content": "Crimson Games is my go-to platform for buying game keys. The website is user-friendly, and the customer support is top-notch. Whenever I've had an issue, they've been quick to respond and resolve it. The game keys are always legitimate, and I've never had any problems with redemption. Keep up the great work!"
+    },
+    {
+      "image": "./assets/img/reviews/4-5-stars.webp",
+      "stars": "4.5 Stars",
+      "user": "Lisa M.",
+      "date": "2 days ago",
+      "content": "I stumbled upon Crimson Games while searching for a specific game key, and I'm so glad I did. Not only did they have what I was looking for, but the prices were much better compared to other platforms. The key was delivered instantly, and I was playing within minutes. I'll definitely be a returning customer."
+    },
+    {
+      "image": "./assets/img/reviews/4-stars.webp",
+      "stars": "4 Stars",
+      "user": "John D.",
+      "date": "4 days ago",
+      "content": "I've been burned by sketchy game key sellers before, but Crimson Games is different. They prioritize authenticity and customer satisfaction. The game keys I've purchased have all worked flawlessly, and the experience has been hassle-free. I feel confident and secure when shopping with them."
+    },
+    {
+      "image": "./assets/img/reviews/4-5-stars.webp",
+      "stars": "4.5 Stars",
+      "user": "Emily H.",
+      "date": "5 days ago",
+      "content": "Crimson Games has made my gaming life so much easier. Instead of going to multiple stores or websites to find the games I want, I can simply visit their platform and browse their extensive collection. It's convenient, reliable, and I've never had any issues with the keys I've purchased. Highly recommended for all gamers out there!"
+    },
+    {
+      "image": "./assets/img/reviews/5-stars.webp",
+      "stars": "5 Stars",
+      "user": "Michael S.",
+      "date": "6 days ago",
+      "content": "I've been a loyal customer of Crimson Games for years, and they've never disappointed me. The range of games they offer is impressive, covering all major platforms. The prices are competitive, and I've even snagged some great deals during their promotions. If you're looking for a reliable source of game keys, look no further."
+    }
+  ]
+}

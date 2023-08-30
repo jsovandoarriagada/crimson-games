@@ -1,6 +1,6 @@
-@import '../utilities/extends';
-@import '../utilities/mixins';
-@import '../utilities/variables';
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../utilities/variables";
 
 /* HEADER */
 .header {
@@ -20,6 +20,10 @@
     &--left {
       @include flex-direction(row, 0);
       @include flex-alignment(space-between, center);
+
+      .header__logo {
+        @extend %grid-center;
+      }
     }
 
     &--right {
@@ -39,11 +43,8 @@
 /* HEADER: LOGO */
 .header__logo img {
   @extend %default-transition;
-  @include dimensions(auto, 2.4rem);
-
-  &:hover {
-    filter: drop-shadow(0 0 0.5rem $guardsman-red);
-  }
+  @include dimensions(auto, 1.6rem);
+  cursor: pointer;
 }
 
 /* HEADER: SEARCH */
@@ -64,7 +65,7 @@
     @include colors(transparent, $athens-gray);
     @include dimensions(24rem, auto);
     @include font($regular, 400);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     outline: none;
     border: none;
   }
@@ -111,7 +112,7 @@
   }
 }
 
-@media (max-width: 38.75rem) {
+@media (max-width: 41.25rem) {
   .nav__search {
     display: grid;
   }

@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/jsovandoarriagada/crimson-games">
-    <img src="https://i.ibb.co/kHnJT45/logo.webp" alt="Logo" width="40" height="40">
+    <img src="https://i.ibb.co/121jZxk/symbol.webp" alt="Logo" width="60" height="60">
   </a>
   <h2 align="center">Crimson Games</h2>
 </div>

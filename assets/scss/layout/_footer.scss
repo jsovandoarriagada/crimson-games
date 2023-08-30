@@ -1,0 +1,23 @@
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+/* FOOTER */
+footer {
+  @extend %grid-center;
+  gap: $small;
+  margin: 3rem 0 2rem 0;
+  text-align: center;
+
+  img {
+    @include dimensions(auto, 5.6rem);
+    cursor: pointer;
+  }
+
+  p {
+    span {
+      display: block;
+      color: $cadet-blue;
+    }
+  }
+}

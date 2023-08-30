@@ -1,0 +1,105 @@
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+/* FEATURED */
+.banner {
+  @include dimensions(100%, 36rem);
+  @include flex-direction(row, 0);
+  @include flex-alignment(center, center);
+  background-image: url("../img/banner/background.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+
+  &__shadow {
+    @include dimensions(100%, 36rem);
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__container {
+    @include flex-direction(row, 8.4rem);
+    @include flex-alignment(center, center);
+    z-index: 2;
+
+    p {
+      @extend %grid-center;
+      height: 3.5rem;
+    }
+
+    &--left {
+      @extend %grid-center;
+
+      .banner__title {
+        font-weight: 400;
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      .banner__emoji {
+        font-size: 2rem;
+      }
+
+      .banner__subtitle {
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: $cadet-blue;
+      }
+    }
+
+    &--right {
+      @extend %grid-center;
+
+      .banner__search {
+        @extend %default-transition;
+        @include colors($baltic-sea, $cadet-blue);
+        @include flex-direction(row, $x-small);
+        @include flex-alignment(center, center);
+        padding: $x-small $small;
+        border-radius: 2.4rem;
+
+        span {
+          @include font($xx-large, 300);
+          cursor: pointer;
+          color: $athens-gray;
+        }
+
+        &--input {
+          @include colors(transparent, $athens-gray);
+          @include dimensions(15rem, auto);
+          @include font($regular, 500);
+          font-family: "Poppins", sans-serif;
+          outline: none;
+          border: none;
+        }
+      }
+
+      .banner__store {
+        background: $cornflower-blue;
+        @include font($regular, 500);
+        border-radius: $small;
+        padding: $small;
+        cursor: pointer;
+        text-shadow: none;
+        color: $woodsmoke;
+        @extend %default-transition;
+
+        &:hover {
+          background: $cornflower-blue-hover;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 41.25rem) {
+    &__container {
+      @include flex-direction(column, 8.4rem);
+    }
+  }
+}

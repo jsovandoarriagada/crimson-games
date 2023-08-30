@@ -1,0 +1,40 @@
+{
+  "news": [
+    {
+      "image": "./assets/img/news/ak-xolotl.webp",
+      "date": "June 7, 2023",
+      "title": "AK-XOLOTL hits PlayStation",
+      "content": ""
+    },
+    {
+      "image": "./assets/img/news/tears-of-the-kingdom-2.webp",
+      "date": "June 7, 2023",
+      "title": "Soapbox: Tears of the Kingdom",
+      "content": ""
+    },
+    {
+      "image": "./assets/img/news/diablo-iv.webp",
+      "date": "June 2, 2023",
+      "title": "Diablo IV interview",
+      "content": ""
+    },
+    {
+      "image": "./assets/img/news/towers-of-aghasba.webp",
+      "date": "May 24, 2023",
+      "title": "Towers of Aghasba coming",
+      "content": ""
+    },
+    {
+      "image": "./assets/img/news/everdream-valley.webp",
+      "date": "May 23, 2023",
+      "title": "Everdream Valley new trailer",
+      "content": ""
+    },
+    {
+      "image": "./assets/img/news/tears-of-the-kingdom-1.webp",
+      "date": "May 21, 2023",
+      "title": "Guide: Tears of the Kingdom",
+      "content": ""
+    }
+  ]
+}

@@ -1,3 +1,179 @@
-@import '../layout/header';
-@import '../layout/featured';
-@import '../layout/main';
+@import "../components/card";
+@import "../components/faq";
+@import "../components/new";
+@import "../components/review";
+@import "../components/bestseller";
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.home {
+  max-width: 100%;
+
+  /* PC, SWITCH, PLAYSTATION & XBOX */
+  .pc,
+  .switch,
+  .playstation,
+  .xbox {
+    @include flex-direction(column, $xxx-large);
+    max-width: 100%;
+    margin-top: $xxx-large;
+
+    // NEWS: TITLE
+    &__title {
+      @include flex-direction(row, $small);
+      @include flex-alignment(center, center);
+      @include font($medium, 400);
+      align-self: flex-start;
+
+      span {
+        @include colors(none, $fruit-salad);
+        @include font($xx-large, 300);
+        margin: 0;
+      }
+
+      .pc__title--icon {
+        @include colors(none, $yellow-orange);
+      }
+
+      .switch__title--icon {
+        @include colors(none, $guardsman-red);
+      }
+
+      .playstation__title--icon {
+        @include colors(none, $cornflower-blue);
+      }
+
+      .xbox__title--icon {
+        @include colors(none, $fruit-salad);
+      }
+    }
+
+    // PC, SWITCH, PLAYSTATION & XBOX: SLIDER
+    &__slider {
+      position: relative;
+
+      &--left,
+      &--right {
+        @extend %grid-center;
+        @include dimensions(3rem, 3rem);
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.6);
+
+        span {
+          @include font($medium, 400);
+        }
+      }
+
+      &--left {
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+
+      &--right {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+
+      // PC, SWITCH, PLAYSTATION & XBOX: CARDS
+      .pc__cards,
+      .switch__cards,
+      .playstation__cards,
+      .xbox__cards {
+        @include flex-direction(row, $small);
+        cursor: grab;
+        max-width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+
+  /* NEWS */
+  .news {
+    @include dimensions(100%, auto);
+    @include flex-direction(column, 0);
+    @include flex-alignment(center, center);
+    margin-top: $xxx-large;
+
+    // NEWS: TITLE
+    &__title {
+      @include flex-direction(row, $small);
+      @include flex-alignment(center, center);
+      @include font($medium, 400);
+      align-self: flex-start;
+
+      span {
+        @include colors(none, $fruit-salad);
+        @include font($xx-large, 300);
+      }
+    }
+
+    // NEWS: SHOWCASE
+    &__showcase {
+      @include dimensions(100%, auto);
+      @include grid-template(30rem, $small);
+      margin-top: $xxx-large;
+    }
+
+    @media (max-width: 42.5rem) {
+      &__showcase {
+        grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+      }
+    }
+  }
+
+  /* REVIEWS */
+  .reviews {
+    @include flex-direction(column, 0);
+    @include flex-alignment(start, center);
+    margin-top: $xxx-large;
+
+    // REVIEWS: TITLE
+    &__title {
+      @include flex-direction(row, $small);
+      @include flex-alignment(start, center);
+      @include font($medium, 400);
+      align-self: flex-start;
+
+      span {
+        @include colors(none, $yellow-orange);
+        @include font($xx-large, 300);
+      }
+    }
+
+    // REVIEWS: SHOWCASE
+    &__showcase {
+      @include grid-template(32rem, $small);
+      margin-top: $xxx-large;
+    }
+  }
+
+  /* FAQS */
+  .faqs {
+    @include flex-direction(column, $xxx-large);
+    margin-top: $xxx-large;
+
+    // FAQS: TITLE
+    &__title {
+      @include flex-direction(row, $small);
+      @include flex-alignment(start, center);
+      @include font($medium, 400);
+
+      span {
+        @include colors(none, $cornflower-blue);
+        @include font($xx-large, 300);
+      }
+    }
+  }
+}
