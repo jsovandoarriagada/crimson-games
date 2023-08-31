@@ -1,9 +1,5 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <img src="https://i.ibb.co/121jZxk/symbol.webp" alt="Logo" width="auto" height="60">
-</div>
-<br/>
-<div align="center">
   <img src="https://i.ibb.co/SmWXgWq/logo.webp" alt="Logo" width="auto" height="24">
 </div>
 <!-- AUTHOR -->
