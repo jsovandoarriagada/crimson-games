@@ -1097,10 +1097,6 @@ footer {
   gap: 1rem;
   margin: 3rem 0 2rem 0;
   text-align: center; }
-  footer img {
-    width: auto;
-    height: 5.6rem;
-    cursor: pointer; }
   footer p span {
     display: block;
     color: #a9b2bf; }
