@@ -32,6 +32,8 @@
     />
     <!-- HEAD: STYLE -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- HEAD: TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
   </head>
   <!-- BODY -->
   <body class="body">
@@ -51,17 +53,12 @@
               <a class="nav__a" id="nav__home">
                 <span class="material-symbols-outlined">home</span>
               </a>
-              <!--
-                <a class="nav__a" id="nav__account">
-                  <span class="material-symbols-outlined">account_circle</span>
-                </a>
-                -->
               <a class="nav__a" id="nav__store">
                 <span class="material-symbols-outlined">storefront</span>
               </a>
               <a class="nav__a" id="nav__cart">
                 <span class="material-symbols-outlined">shopping_cart</span>
-                <p>0</p>
+                <p id="nav__cart--count">0</p>
               </a>
             </nav>
           </div>
@@ -279,136 +276,7 @@
           <!-- CART: CONTENT -->
           <div class="cart__content">
             <!-- CART: SHOWCASE -->
-            <div class="cart__showcase">
-              <!-- CART: EMPTY -->
-              <p class="cart__empty">YOUR CART IS EMPTY</p>
-              <!-- CART: CARD -->
-              <div class="cart__card">
-                <!-- CART: CARD -- START -->
-                <div class="cart__card--start">
-                  <img src="./assets/img/playstation/final-fantasy-xvi.webp" alt="Final Fantasy XVI" class="cart__card--img" />
-                </div>
-                <!-- CART: CARD -- CONTROLS -->
-                <div class="cart__card--controls">
-                  <button><span class="material-symbols-outlined">remove</span></button>
-                  <p>1</p>
-                  <button><span class="material-symbols-outlined">add</span></button>
-                </div>
-                <!-- CART: CARD -- END-->
-                <div class="cart__card--end">
-                  <p class="cart__card--price">$48<span>$60</span></p>
-                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
-                </div>
-              </div>
-              <!-- CART: CARD -->
-              <div class="cart__card">
-                <!-- CART: CARD -- START -->
-                <div class="cart__card--start">
-                  <img src="./assets/img/playstation/street-fighter-6.webp" alt="Street Fighter 6" class="cart__card--img" />
-                </div>
-                <!-- CART: CARD -- CONTROLS -->
-                <div class="cart__card--controls">
-                  <button><span class="material-symbols-outlined">remove</span></button>
-                  <p>3</p>
-                  <button><span class="material-symbols-outlined">add</span></button>
-                </div>
-                <!-- CART: CARD -- END-->
-                <div class="cart__card--end">
-                  <p class="cart__card--price">$32<span>$40</span></p>
-                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
-                </div>
-              </div>
-              <!-- CART: CARD -->
-              <div class="cart__card">
-                <!-- CART: CARD -- START -->
-                <div class="cart__card--start">
-                  <img src="./assets/img/switch/breath-of-the-wild.webp" alt="Breath of the Wild" class="cart__card--img" />
-                </div>
-                <!-- CART: CARD -- CONTROLS -->
-                <div class="cart__card--controls">
-                  <button><span class="material-symbols-outlined">remove</span></button>
-                  <p>2</p>
-                  <button><span class="material-symbols-outlined">add</span></button>
-                </div>
-                <!-- CART: CARD -- END-->
-                <div class="cart__card--end">
-                  <p class="cart__card--price">$48<span>$60</span></p>
-                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
-                </div>
-              </div>
-              <!-- CART: CARD -->
-              <div class="cart__card">
-                <!-- CART: CARD -- START -->
-                <div class="cart__card--start">
-                  <img src="./assets/img/switch/xenoblade-chronicles.webp" alt="Xenoblade Chronicles" class="cart__card--img" />
-                </div>
-                <!-- CART: CARD -- CONTROLS -->
-                <div class="cart__card--controls">
-                  <button><span class="material-symbols-outlined">remove</span></button>
-                  <p>1</p>
-                  <button><span class="material-symbols-outlined">add</span></button>
-                </div>
-                <!-- CART: CARD -- END-->
-                <div class="cart__card--end">
-                  <p class="cart__card--price">$40<span>$50</span></p>
-                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
-                </div>
-              </div>
-              <!-- CART: CARD -->
-              <div class="cart__card">
-                <!-- CART: CARD -- START -->
-                <div class="cart__card--start">
-                  <img src="./assets/img/xbox/elden-ring.webp" alt="Elden Ring" class="cart__card--img" />
-                </div>
-                <!-- CART: CARD -- CONTROLS -->
-                <div class="cart__card--controls">
-                  <button><span class="material-symbols-outlined">remove</span></button>
-                  <p>1</p>
-                  <button><span class="material-symbols-outlined">add</span></button>
-                </div>
-                <!-- CART: CARD -- END-->
-                <div class="cart__card--end">
-                  <p class="cart__card--price">$45<span>$50</span></p>
-                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
-                </div>
-              </div>
-              <!-- CART: CARD -->
-              <div class="cart__card">
-                <!-- CART: CARD -- START -->
-                <div class="cart__card--start">
-                  <img src="./assets/img/xbox/halo-infinite.webp" alt="Halo Infinite" class="cart__card--img" />
-                </div>
-                <!-- CART: CARD -- CONTROLS -->
-                <div class="cart__card--controls">
-                  <button><span class="material-symbols-outlined">remove</span></button>
-                  <p>3</p>
-                  <button><span class="material-symbols-outlined">add</span></button>
-                </div>
-                <!-- CART: CARD -- END-->
-                <div class="cart__card--end">
-                  <p class="cart__card--price">$45<span>$50</span></p>
-                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
-                </div>
-              </div>
-              <!-- CART: CARD -->
-              <div class="cart__card">
-                <!-- CART: CARD -- START -->
-                <div class="cart__card--start">
-                  <img src="./assets/img/pc/octopath-traveler-ii.webp" alt="Octopath Traveler II" class="cart__card--img" />
-                </div>
-                <!-- CART: CARD -- CONTROLS -->
-                <div class="cart__card--controls">
-                  <button><span class="material-symbols-outlined">remove</span></button>
-                  <p>2</p>
-                  <button><span class="material-symbols-outlined">add</span></button>
-                </div>
-                <!-- CART: CARD -- END-->
-                <div class="cart__card--end">
-                  <p class="cart__card--price">$45<span>$50</span></p>
-                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
-                </div>
-              </div>
-            </div>
+            <div class="cart__showcase"></div>
             <!-- CART: SUMMARY -->
             <div class="cart__summary">
               <!-- SUMMARY -->
@@ -420,19 +288,19 @@
                 <!-- SUMMARY: ITEMS -->
                 <div class="summary__items">
                   <p>Items:</p>
-                  <span class="summary__items--span">--</span>
+                  <span id="summary__items--span">--</span>
                 </div>
                 <!-- SUMMARY: LINE -->
                 <div class="summary__line"></div>
                 <!-- SUMMARY: FULL PRICE -->
                 <div class="summary__full">
                   <p>Full Price:</p>
-                  <p>$<span class="summary__full--span">--</span></p>
+                  <p>$<span id="summary__full--span">--</span></p>
                 </div>
                 <!-- SUMMARY: DISCOUNT -->
                 <div class="summary__discount">
                   <p>You Save:</p>
-                  <p>$<span class="summary__discount--span">--</span></p>
+                  <p>$<span id="summary__discount--span">--</span></p>
                 </div>
                 <!-- SUMMARY: LINE -->
                 <div class="summary__line"></div>
@@ -444,7 +312,7 @@
               </div>
               <!-- CART: BUTTONS -->
               <div class="cart__buttons">
-                <button class="cart__clear">CLEAR</button>
+                <button class="cart__clear" onclick="clearCartItems()">CLEAR</button>
                 <button class="cart__checkout">CHECKOUT</button>
               </div>
               <!-- CART: PAYMENT -->
@@ -478,7 +346,7 @@
         <p>© 2023 Crimson Games, All Rights Reserved.<span>Crafted with ❤️ by José Simón Ovando A.</span></p>
       </footer>
     </div>
-    <!-- SCRIPT -->
+    <!-- BODY: SCRIPTS -->
     <script src="./assets/js/navigation.js"></script>
     <script src="./assets/js/games.js"></script>
     <script src="./assets/js/news.js"></script>
@@ -486,5 +354,7 @@
     <script src="./assets/js/faqs.js"></script>
     <script src="./assets/js/cart.js"></script>
     <script src="./assets/js/slider.js"></script>
+    <!-- BODY: TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>

@@ -65,7 +65,7 @@ const displayHomeGames = () => {
               <p class="card__price--final">${playstationGames[i].prices.final}</p>
               <p class="card__price--base">${playstationGames[i].prices.base}</p>
             </div>
-            <button class="card__cart">
+            <button class="card__cart" onclick="addToCart(${playstationGames[i].id})">
               <span class="material-symbols-outlined">shopping_cart</span>
             </button>
           </div>
@@ -86,7 +86,7 @@ const displayHomeGames = () => {
           <p class="card__price--final">${switchGames[i].prices.final}</p>
           <p class="card__price--base">${switchGames[i].prices.base}</p>
         </div>
-        <button class="card__cart">
+        <button class="card__cart" onclick="addToCart(${switchGames[i].id})">
           <span class="material-symbols-outlined">shopping_cart</span>
         </button>
       </div>
@@ -107,7 +107,7 @@ const displayHomeGames = () => {
           <p class="card__price--final">${xboxGames[i].prices.final}</p>
           <p class="card__price--base">${xboxGames[i].prices.base}</p>
         </div>
-        <button class="card__cart">
+        <button class="card__cart" onclick="addToCart(${xboxGames[i].id})">
           <span class="material-symbols-outlined">shopping_cart</span>
         </button>
       </div>
@@ -128,7 +128,7 @@ const displayHomeGames = () => {
           <p class="card__price--final">${pcGames[i].prices.final}</p>
           <p class="card__price--base">${pcGames[i].prices.base}</p>
         </div>
-        <button class="card__cart">
+        <button class="card__cart" onclick="addToCart(${pcGames[i].id})">
           <span class="material-symbols-outlined">shopping_cart</span>
         </button>
       </div>
@@ -150,7 +150,7 @@ const displayStoreGames = () => {
           <p class="card__price--final">${game.prices.final}</p>
           <p class="card__price--base">${game.prices.base}</p>
         </div>
-        <button class="card__cart">
+        <button class="card__cart" onclick="addToCart(${game.id})">
           <span class="material-symbols-outlined">shopping_cart</span>
         </button>
       </div>
