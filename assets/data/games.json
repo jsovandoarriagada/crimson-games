@@ -18,8 +18,8 @@
       "title": "Final Fantasy XVI",
       "genres": ["Action RPG", "Adventure"],
       "prices": {
-        "base": "$40",
-        "final": "$50"
+        "base": "$50",
+        "final": "$40"
       }
     },
     {
@@ -136,7 +136,7 @@
       "id": 13,
       "platform": "playstation",
       "image": "./assets/img/playstation/legacy-of-thieves.webp",
-      "title": "Uncharted: Legacy of Thieves",
+      "title": "Legacy of Thieves",
       "genres": ["Platform", "Adventure"],
       "prices": {
         "base": "$50",
@@ -202,7 +202,7 @@
       "id": 19,
       "platform": "switch",
       "image": "./assets/img/switch/tears-of-the-kingdom.webp",
-      "title": "TLOZ: Tears of the Kingdom",
+      "title": "Tears of the Kingdom",
       "genres": ["Adventure", "Action"],
       "prices": {
         "base": "$60",
@@ -224,7 +224,7 @@
       "id": 21,
       "platform": "switch",
       "image": "./assets/img/switch/new-horizons.webp",
-      "title": "Animal Crossing: New Horizons",
+      "title": "Animal Crossing",
       "genres": ["Social Simulation", "Adventure"],
       "prices": {
         "base": "$50",
@@ -246,7 +246,7 @@
       "id": 23,
       "platform": "switch",
       "image": "./assets/img/switch/shredders-revenge.webp",
-      "title": "TMNT: Shredder's Revenge",
+      "title": "Shredder's Revenge",
       "genres": ["Adventure", "Beat'em Up"],
       "prices": {
         "base": "$30",
@@ -268,7 +268,7 @@
       "id": 25,
       "platform": "switch",
       "image": "./assets/img/switch/breath-of-the-wild.webp",
-      "title": "TLOZ: Breath of the Wild",
+      "title": "Breath of the Wild",
       "genres": ["Adventure", "Action"],
       "prices": {
         "base": "$60",
@@ -609,7 +609,7 @@
       "id": 56,
       "platform": "pc",
       "image": "./assets/img/pc/dead-cells.webp",
-      "title": "Dead Cells: Return to Castlevania",
+      "title": "Dead Cells",
       "genres": ["Platform", "Adventure"],
       "prices": {
         "base": "$40",
@@ -642,7 +642,7 @@
       "id": 59,
       "platform": "pc",
       "image": "./assets/img/pc/the-legend-of-heroes.webp",
-      "title": "TLOH: Trails to Azure",
+      "title": "Trails to Azure",
       "genres": ["RPG", "Strategy"],
       "prices": {
         "base": "$30",
@@ -785,7 +785,7 @@
       "id": 72,
       "platform": "pc",
       "image": "./assets/img/pc/phantom-detective.webp",
-      "title": "Ghost Trick: Phantom Detective",
+      "title": "Ghost Trick",
       "genres": ["Puzzle", "Adventure"],
       "prices": {
         "base": "$50",

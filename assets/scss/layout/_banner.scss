@@ -97,7 +97,7 @@
     }
   }
 
-  @media (max-width: 41.25rem) {
+  @media (max-width: 680px) {
     &__container {
       @include flex-direction(column, 8.4rem);
     }

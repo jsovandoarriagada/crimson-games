@@ -7,8 +7,7 @@
   @include dimensions(120rem, auto);
   @include flex-direction(column, 4rem);
   @include flex-alignment(center, start);
-  margin: $xxx-large 0 $x-large 0;
-  scroll-margin-top: 9rem;
+  margin-top: $xxx-large;
   display: none;
 
   // CART: TITLE
@@ -21,6 +20,234 @@
     span {
       @include colors(none, $cornflower-blue);
       @include font($xx-large, 300);
+    }
+  }
+
+  // CART: CONTENT
+  &__content {
+    @include flex-direction(row, $small);
+    margin-top: 4rem;
+
+    // CART: SHOWCASE
+    .cart__showcase {
+      @include flex-direction(column, $x-small);
+      @include dimensions(calc(100% - 300px), max-content);
+      @include grid-template(32rem, $x-small);
+
+      // CART: EMPTY
+      .cart__empty {
+        @extend %grid-center;
+        border-radius: $small;
+        height: 342px;
+        width: 100%;
+        color: $cadet-blue;
+        border: 0.1rem solid $topaz;
+        display: none !important;
+      }
+
+      @media (max-width: 680px) {
+        &--empty {
+          @include dimensions(100%, 14rem);
+        }
+      }
+    }
+
+    @media (max-width: 680px) {
+      .cart__showcase {
+        @include dimensions(100%, auto);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cart__showcase {
+        @include grid-template(28rem, $x-small);
+      }
+    }
+
+    // CART: CARD
+    .cart__card {
+      @extend %default-transition;
+      @include dimensions(100%, 5.6rem);
+      @include flex-direction(row, $small);
+      @include flex-alignment(space-between, center);
+      @include colors($mako, none);
+      border-radius: $small;
+
+      &:hover {
+        @include colors($trout, none);
+      }
+
+      // CART: CARD -- START
+      &--start {
+        @include dimensions(6.3rem, 5.6rem);
+
+        img {
+          @include dimensions(auto, 5.6rem);
+          border-radius: $small;
+        }
+      }
+
+      // CART: CARD -- CONTROLS
+      &--controls {
+        @include flex-direction(row, 0);
+        @include flex-alignment(space-between, center);
+
+        button {
+          @extend %default-transition;
+          height: 1.4rem;
+          width: 1.4rem;
+          border-radius: 50%;
+          text-shadow: none;
+          cursor: pointer;
+          background-color: $cadet-blue;
+
+          &:hover {
+            background-color: $athens-gray;
+          }
+
+          span {
+            font-weight: 500;
+            font-size: 1.4rem;
+          }
+        }
+
+        p {
+          width: 2.4rem;
+          text-align: center;
+        }
+      }
+
+      // CART: CARD -- END
+      &--end {
+        @include flex-direction(row, $medium);
+        @include flex-alignment(center, center);
+
+        .cart__card--price {
+          line-height: 1;
+
+          span {
+            display: block;
+            color: $cadet-blue;
+            text-decoration: line-through;
+          }
+        }
+
+        .cart__card--delete {
+          height: 1.4rem;
+          width: 1.4rem;
+          background: none;
+          text-shadow: none;
+
+          span {
+            @extend %default-transition;
+            font-size: 2.4rem;
+            color: $cadet-blue;
+            margin-right: $x-large;
+
+            &:hover {
+              color: $athens-gray;
+            }
+          }
+        }
+      }
+    }
+
+    // CART: SUMMARY
+    .cart__summary {
+      @include dimensions(300px, auto);
+      @include flex-direction(column, $x-small);
+
+      // SUMMARY
+      .summary {
+        @include colors($mako, none);
+        @include dimensions(100%, auto);
+        @include flex-direction(column, $small);
+        border-radius: $small;
+        padding: $small;
+
+        // SUMMARY: TITLE
+        &__title {
+          @extend %grid-center;
+        }
+
+        // SUMMARY: LINE
+        &__line {
+          @include dimensions(100%, $xxx-small);
+          background-color: $topaz;
+        }
+
+        // SUMMARY: ITEMS, FULL, DISCOUNT AND TOTAL
+        &__items,
+        &__full,
+        &__discount,
+        &__total {
+          @include flex-direction(row, 0);
+          @include flex-alignment(space-between, center);
+        }
+      }
+
+      // CART: BUTTONS
+      .cart__buttons {
+        @include flex-direction(row, $x-small);
+
+        .cart__clear,
+        .cart__checkout {
+          @extend %default-transition;
+          font-weight: 500;
+          width: 50%;
+          text-shadow: none;
+        }
+
+        .cart__clear {
+          @include colors($guardsman-red, none);
+
+          &:hover {
+            background-color: $guardsman-red-hover;
+          }
+        }
+
+        .cart__checkout {
+          @include colors($cornflower-blue, none);
+
+          &:hover {
+            background-color: $cornflower-blue-hover;
+          }
+        }
+      }
+
+      // CART: PAYMENT
+      .cart__payment {
+        @extend %grid-center;
+        @include colors($mako, none);
+        max-width: 100%;
+        gap: $small;
+        padding: $small;
+        border-radius: $small;
+
+        &--cards {
+          width: 100%;
+          height: auto;
+          @include flex-direction(row, $x-small);
+          @include flex-alignment(center, center);
+          flex-wrap: wrap;
+
+          img {
+            @include dimensions(auto, 1.9rem);
+          }
+        }
+      }
+    }
+
+    @media (max-width: 680px) {
+      .cart__summary {
+        @include dimensions(100%, auto);
+      }
+    }
+  }
+
+  @media (max-width: 680px) {
+    &__content {
+      @include flex-direction(column, $small);
     }
   }
 }

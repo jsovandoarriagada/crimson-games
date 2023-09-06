@@ -157,6 +157,12 @@
       @include grid-template(32rem, $small);
       margin-top: $xxx-large;
     }
+
+    @media (max-width: 720px) {
+      &__showcase {
+        @include grid-template(28rem, $small);
+      }
+    }
   }
 
   /* FAQS */

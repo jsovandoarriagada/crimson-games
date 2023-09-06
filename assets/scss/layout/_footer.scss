@@ -6,7 +6,7 @@
 footer {
   @extend %grid-center;
   gap: $small;
-  margin: 3rem 0 2rem 0;
+  margin: $xxx-large 0 $x-large 0;
   text-align: center;
 
   p {

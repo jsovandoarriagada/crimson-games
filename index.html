@@ -41,29 +41,28 @@
       <header class="header">
         <!-- HEADER: CONTAINER -->
         <div class="header__container">
-          <div class="header__container--left">
+          <div class="header--left">
             <!-- HEADER: LOGO -->
             <a class="header__logo" id="header__home"><img src="./assets/img/logo.webp" draggable="false" alt="Crimson Games" /></a>
           </div>
-          <div class="header__container--right">
+          <div class="header--right">
             <!-- NAV -->
             <nav class="nav">
-              <!-- NAV: GENERAL -->
-              <div class="nav__general">
-                <a class="nav__general--link" id="nav__home">
-                  <span class="material-symbols-outlined">home</span>
-                </a>
-                <a class="nav__general--link" id="nav__account">
+              <a class="nav__a" id="nav__home">
+                <span class="material-symbols-outlined">home</span>
+              </a>
+              <!--
+                <a class="nav__a" id="nav__account">
                   <span class="material-symbols-outlined">account_circle</span>
                 </a>
-                <a class="nav__general--link" id="nav__store">
-                  <span class="material-symbols-outlined">storefront</span>
-                </a>
-                <a class="nav__general--link" id="nav__cart">
-                  <span class="material-symbols-outlined">shopping_cart</span>
-                  <p>0</p>
-                </a>
-              </div>
+                -->
+              <a class="nav__a" id="nav__store">
+                <span class="material-symbols-outlined">storefront</span>
+              </a>
+              <a class="nav__a" id="nav__cart">
+                <span class="material-symbols-outlined">shopping_cart</span>
+                <p>0</p>
+              </a>
             </nav>
           </div>
         </div>
@@ -225,21 +224,6 @@
             <div class="faq">
               <!-- FAQ: QUESTION -->
               <div class="faq__question">
-                <p>What platforms do you offer keys for?</p>
-                <span class="material-symbols-outlined">expand_more</span>
-              </div>
-              <!-- FAQ: ANSWER -->
-              <div class="faq__answer">
-                <p>
-                  We offer game keys for popular platforms such as PC, Xbox, PlayStation, and Nintendo Switch. You can find games for Steam, Epic Games Store,
-                  PlayStation Network, Xbox Live, and Nintendo eShop, among others.
-                </p>
-              </div>
-            </div>
-            <!-- FAQ -->
-            <div class="faq">
-              <!-- FAQ: QUESTION -->
-              <div class="faq__question">
                 <p>Are the game keys legitimate?</p>
                 <span class="material-symbols-outlined">expand_more</span>
               </div>
@@ -266,30 +250,7 @@
                 </p>
               </div>
             </div>
-            <!-- FAQ -->
-            <div class="faq">
-              <!-- FAQ: QUESTION -->
-              <div class="faq__question">
-                <p>What if I encounter any issues?</p>
-                <span class="material-symbols-outlined">expand_more</span>
-              </div>
-              <!-- FAQ: ANSWER -->
-              <div class="faq__answer">
-                <p>
-                  If you experience any problems with your game key, please contact our customer support team. We have a dedicated support team available to
-                  assist you with any technical issues, key redemption problems, or general inquiries.
-                </p>
-              </div>
-            </div>
           </section>
-        </section>
-        <!-- ACCOUNT -->
-        <section class="account" id="account">
-          <!-- ACCOUNT: TITLE -->
-          <div class="account__title">
-            <p>Account</p>
-            <span class="material-symbols-outlined">account_circle</span>
-          </div>
         </section>
         <!-- STORE -->
         <section class="store" id="store">
@@ -315,18 +276,215 @@
             <p>Cart</p>
             <span class="material-symbols-outlined">shopping_cart</span>
           </div>
+          <!-- CART: CONTENT -->
+          <div class="cart__content">
+            <!-- CART: SHOWCASE -->
+            <div class="cart__showcase">
+              <!-- CART: EMPTY -->
+              <p class="cart__empty">YOUR CART IS EMPTY</p>
+              <!-- CART: CARD -->
+              <div class="cart__card">
+                <!-- CART: CARD -- START -->
+                <div class="cart__card--start">
+                  <img src="./assets/img/playstation/final-fantasy-xvi.webp" alt="Final Fantasy XVI" class="cart__card--img" />
+                </div>
+                <!-- CART: CARD -- CONTROLS -->
+                <div class="cart__card--controls">
+                  <button><span class="material-symbols-outlined">remove</span></button>
+                  <p>1</p>
+                  <button><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <!-- CART: CARD -- END-->
+                <div class="cart__card--end">
+                  <p class="cart__card--price">$48<span>$60</span></p>
+                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
+                </div>
+              </div>
+              <!-- CART: CARD -->
+              <div class="cart__card">
+                <!-- CART: CARD -- START -->
+                <div class="cart__card--start">
+                  <img src="./assets/img/playstation/street-fighter-6.webp" alt="Street Fighter 6" class="cart__card--img" />
+                </div>
+                <!-- CART: CARD -- CONTROLS -->
+                <div class="cart__card--controls">
+                  <button><span class="material-symbols-outlined">remove</span></button>
+                  <p>3</p>
+                  <button><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <!-- CART: CARD -- END-->
+                <div class="cart__card--end">
+                  <p class="cart__card--price">$32<span>$40</span></p>
+                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
+                </div>
+              </div>
+              <!-- CART: CARD -->
+              <div class="cart__card">
+                <!-- CART: CARD -- START -->
+                <div class="cart__card--start">
+                  <img src="./assets/img/switch/breath-of-the-wild.webp" alt="Breath of the Wild" class="cart__card--img" />
+                </div>
+                <!-- CART: CARD -- CONTROLS -->
+                <div class="cart__card--controls">
+                  <button><span class="material-symbols-outlined">remove</span></button>
+                  <p>2</p>
+                  <button><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <!-- CART: CARD -- END-->
+                <div class="cart__card--end">
+                  <p class="cart__card--price">$48<span>$60</span></p>
+                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
+                </div>
+              </div>
+              <!-- CART: CARD -->
+              <div class="cart__card">
+                <!-- CART: CARD -- START -->
+                <div class="cart__card--start">
+                  <img src="./assets/img/switch/xenoblade-chronicles.webp" alt="Xenoblade Chronicles" class="cart__card--img" />
+                </div>
+                <!-- CART: CARD -- CONTROLS -->
+                <div class="cart__card--controls">
+                  <button><span class="material-symbols-outlined">remove</span></button>
+                  <p>1</p>
+                  <button><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <!-- CART: CARD -- END-->
+                <div class="cart__card--end">
+                  <p class="cart__card--price">$40<span>$50</span></p>
+                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
+                </div>
+              </div>
+              <!-- CART: CARD -->
+              <div class="cart__card">
+                <!-- CART: CARD -- START -->
+                <div class="cart__card--start">
+                  <img src="./assets/img/xbox/elden-ring.webp" alt="Elden Ring" class="cart__card--img" />
+                </div>
+                <!-- CART: CARD -- CONTROLS -->
+                <div class="cart__card--controls">
+                  <button><span class="material-symbols-outlined">remove</span></button>
+                  <p>1</p>
+                  <button><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <!-- CART: CARD -- END-->
+                <div class="cart__card--end">
+                  <p class="cart__card--price">$45<span>$50</span></p>
+                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
+                </div>
+              </div>
+              <!-- CART: CARD -->
+              <div class="cart__card">
+                <!-- CART: CARD -- START -->
+                <div class="cart__card--start">
+                  <img src="./assets/img/xbox/halo-infinite.webp" alt="Halo Infinite" class="cart__card--img" />
+                </div>
+                <!-- CART: CARD -- CONTROLS -->
+                <div class="cart__card--controls">
+                  <button><span class="material-symbols-outlined">remove</span></button>
+                  <p>3</p>
+                  <button><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <!-- CART: CARD -- END-->
+                <div class="cart__card--end">
+                  <p class="cart__card--price">$45<span>$50</span></p>
+                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
+                </div>
+              </div>
+              <!-- CART: CARD -->
+              <div class="cart__card">
+                <!-- CART: CARD -- START -->
+                <div class="cart__card--start">
+                  <img src="./assets/img/pc/octopath-traveler-ii.webp" alt="Octopath Traveler II" class="cart__card--img" />
+                </div>
+                <!-- CART: CARD -- CONTROLS -->
+                <div class="cart__card--controls">
+                  <button><span class="material-symbols-outlined">remove</span></button>
+                  <p>2</p>
+                  <button><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <!-- CART: CARD -- END-->
+                <div class="cart__card--end">
+                  <p class="cart__card--price">$45<span>$50</span></p>
+                  <button class="cart__card--delete"><span class="material-symbols-outlined">delete</span></button>
+                </div>
+              </div>
+            </div>
+            <!-- CART: SUMMARY -->
+            <div class="cart__summary">
+              <!-- SUMMARY -->
+              <div class="summary">
+                <!-- SUMMARY: TITLE -->
+                <p class="summary__title">Summary</p>
+                <!-- SUMMARY: LINE -->
+                <div class="summary__line"></div>
+                <!-- SUMMARY: ITEMS -->
+                <div class="summary__items">
+                  <p>Items:</p>
+                  <span class="summary__items--span">--</span>
+                </div>
+                <!-- SUMMARY: LINE -->
+                <div class="summary__line"></div>
+                <!-- SUMMARY: FULL PRICE -->
+                <div class="summary__full">
+                  <p>Full Price:</p>
+                  <p>$<span class="summary__full--span">--</span></p>
+                </div>
+                <!-- SUMMARY: DISCOUNT -->
+                <div class="summary__discount">
+                  <p>You Save:</p>
+                  <p>$<span class="summary__discount--span">--</span></p>
+                </div>
+                <!-- SUMMARY: LINE -->
+                <div class="summary__line"></div>
+                <!-- SUMMARY: TOTAL -->
+                <div class="summary__total">
+                  <p>Total:</p>
+                  <p>$<span id="summary__total--span">--</span></p>
+                </div>
+              </div>
+              <!-- CART: BUTTONS -->
+              <div class="cart__buttons">
+                <button class="cart__clear">CLEAR</button>
+                <button class="cart__checkout">CHECKOUT</button>
+              </div>
+              <!-- CART: PAYMENT -->
+              <div class="cart__payment">
+                <!-- CART: PAYMENT -- TITLE -->
+                <p class="cart__payment--title">We accept:</p>
+                <!-- CART: PAYMENT -- CARDS -->
+                <div class="cart__payment--cards">
+                  <img src="./assets/img/payment/alipay.webp" alt="Alipay" />
+                  <img src="./assets/img/payment/american-express.webp" alt="American Express" />
+                  <img src="./assets/img/payment/jcb.webp" alt="JCB" />
+                  <img src="./assets/img/payment/kakao-pay.webp" alt="Kakao Pay" />
+                  <img src="./assets/img/payment/mastercard.webp" alt="Mastercard" />
+                  <img src="./assets/img/payment/mercado-pago.webp" alt="Mercado Pago" />
+                  <img src="./assets/img/payment/multibanco.webp" alt="Multibanco" />
+                  <img src="./assets/img/payment/oxxo.webp" alt="OXXO" />
+                  <img src="./assets/img/payment/przelewy24.webp" alt="Przelewy24" />
+                  <img src="./assets/img/payment/sepa.webp" alt="Sepa" />
+                  <img src="./assets/img/payment/toss.webp" alt="Toss" />
+                  <img src="./assets/img/payment/union-pay.webp" alt="Union Pay" />
+                  <img src="./assets/img/payment/visa.webp" alt="Visa" />
+                  <img src="./assets/img/payment/yandex-money.webp" alt="Yandex Money" />
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
+      <!-- FOOTER -->
       <footer>
         <p>© 2023 Crimson Games, All Rights Reserved.<span>Crafted with ❤️ by José Simón Ovando A.</span></p>
       </footer>
     </div>
     <!-- SCRIPT -->
     <script src="./assets/js/navigation.js"></script>
-    <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/games.js"></script>
     <script src="./assets/js/news.js"></script>
     <script src="./assets/js/reviews.js"></script>
     <script src="./assets/js/faqs.js"></script>
+    <script src="./assets/js/cart.js"></script>
+    <script src="./assets/js/slider.js"></script>
   </body>
 </html>

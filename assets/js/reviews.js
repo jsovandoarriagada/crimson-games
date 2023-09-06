@@ -1,6 +1,11 @@
+/* SELECT ELEMENT */
 const reviewsShowcase = document.querySelector(".reviews__showcase");
+
+/* REVIEWS ARRAY */
 let reviews = [];
 
+/* LOAD REVIEWS FROM REVIEWSS.JSON USING FETCH, READ AND PARSE THEM USING JSON(), 
+PUSH THE RESULT INTO REVIEWS ARRAY, THEN RENDER IT BY CALLING DISPLAYREVIEWS()*/
 const loadReviews = async () => {
   const response = await fetch("./assets/data/reviews.json");
   const data = await response.json();
@@ -8,6 +13,8 @@ const loadReviews = async () => {
   displayReviews();
 };
 
+/* ITERATE OVER REVIEWS ARRAY, THEN PUSH A CARD TEMPLATE 
+OF THE CURRENT REVIEW INTO REVIEWS SHOWCASE */
 const displayReviews = () => {
   reviews.forEach((review) => {
     reviewsShowcase.innerHTML += `
@@ -28,4 +35,5 @@ const displayReviews = () => {
   });
 };
 
+/* RUN LOADREVIEWS() */
 loadReviews();

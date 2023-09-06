@@ -7,7 +7,7 @@
   @include dimensions(120rem, auto);
   @include flex-direction(column, 0.8rem);
   @include flex-alignment(center, start);
-  margin: $xxx-large 0 $x-large 0;
+  margin-top: $xxx-large;
   scroll-margin-top: 9rem;
   display: none;
 
@@ -49,6 +49,7 @@
     .store__cards {
       @include dimensions(100%, auto);
       @include grid-template(18rem, $small);
+      margin-bottom: 0;
 
       .card {
         width: 100%;
@@ -59,9 +60,9 @@
       }
     }
 
-    @media (max-width: 42.5rem) {
+    @media (max-width: 620px) {
       .store__cards {
-        grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr));
       }
     }
   }
