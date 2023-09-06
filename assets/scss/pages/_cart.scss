@@ -195,6 +195,7 @@
         .cart__clear,
         .cart__checkout {
           @extend %default-transition;
+          font-size: $regular;
           font-weight: 500;
           width: 50%;
           text-shadow: none;

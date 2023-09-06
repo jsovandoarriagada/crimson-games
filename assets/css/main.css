@@ -1076,6 +1076,7 @@ body {
         gap: 0.5rem; }
         .cart__content .cart__summary .cart__buttons .cart__clear,
         .cart__content .cart__summary .cart__buttons .cart__checkout {
+          font-size: 1.4rem;
           font-weight: 500;
           width: 50%;
           text-shadow: none; }
