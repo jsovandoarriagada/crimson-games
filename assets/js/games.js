@@ -27,7 +27,7 @@ const displayHomeGames = () => {
   /* ITERATE OVER GAMES ARRAY */
   for (let i = 0; i < games.length; i++) {
     /* CHECK IF CURRENT GAME'S PLATFORM IS PLAYSTATION, 
-    IF IT'S TRUE THEN PUSH IT TO SWITCH GAMES ARRAY */
+    IF IT'S TRUE THEN PUSH IT TO PLAYSTATION GAMES ARRAY */
     if (games[i].platform == "playstation") {
       playstationGames.push(games[i]);
     }
@@ -37,12 +37,12 @@ const displayHomeGames = () => {
       switchGames.push(games[i]);
     }
     /* CHECK IF CURRENT GAME'S PLATFORM IS XBOX, 
-    IF IT'S TRUE THEN PUSH IT TO SWITCH GAMES ARRAY */
+    IF IT'S TRUE THEN PUSH IT TO XBOX GAMES ARRAY */
     if (games[i].platform == "xbox") {
       xboxGames.push(games[i]);
     }
     /* CHECK IF CURRENT GAME'S PLATFORM IS PC, 
-    IF IT'S TRUE THEN PUSH IT TO SWITCH GAMES ARRAY */
+    IF IT'S TRUE THEN PUSH IT TO PC GAMES ARRAY */
     if (games[i].platform == "pc") {
       pcGames.push(games[i]);
     }
