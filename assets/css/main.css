@@ -67,17 +67,17 @@ body {
     align-items: center;
     max-width: 100%; }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -175,7 +175,7 @@ body {
       font-size: 2.2rem;
       font-weight: 300; }
     .nav__a p {
-      background-color: #d52228;
+      background-color: #dd4e53;
       color: #eff0f2;
       width: 2rem;
       height: 2rem;
@@ -189,17 +189,17 @@ body {
     background-color: none;
     color: #eff0f2; }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -287,17 +287,17 @@ body {
       flex-direction: column;
       gap: 8.4rem; } }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -384,17 +384,17 @@ body {
         background-color: transparent;
         color: #eff0f2; }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -440,17 +440,17 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -481,17 +481,17 @@ body {
       color: #ffc247;
       text-shadow: 0.1rem 0.1rem black; }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -532,99 +532,17 @@ body {
     background-color: none;
     color: #a9b2bf; }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
-.cart__content .cart__summary .cart__buttons .cart__checkout {
-  transition: all 0.3s; }
-
-/* BESTSELLER */
-.bestseller {
-  background-color: #42464e;
-  color: #eff0f2;
-  width: auto;
-  height: 5.1rem;
-  display: flex;
-  flex-direction: row;
-  gap: 0;
-  justify-content: space-between;
-  align-items: center; }
-  .bestseller button {
-    background-color: transparent;
-    color: #eff0f2;
-    width: 2.2rem;
-    height: 2.2rem;
-    margin-right: 1rem; }
-    .bestseller button span {
-      background-color: transparent;
-      color: #a9b2bf;
-      font-size: 2.2rem;
-      font-weight: 300; }
-      .bestseller button span:hover {
-        background-color: transparent;
-        color: #eff0f2; }
-  .bestseller__price {
-    margin-right: 1rem; }
-  .bestseller:hover {
-    background-color: #535862;
-    color: #eff0f2; }
-  .bestseller__game {
-    display: flex;
-    flex-direction: row;
-    gap: 0; }
-    .bestseller__game p {
-      width: 2.5rem;
-      height: auto; }
-    .bestseller__game div {
-      width: 0.5rem;
-      height: auto; }
-    .bestseller__game .bestseller__switch {
-      background-color: #d52228;
-      color: #eff0f2; }
-    .bestseller__game .bestseller__playstation {
-      background-color: #618bf8;
-      color: #eff0f2; }
-    .bestseller__game .bestseller__xbox {
-      background-color: #4fa868;
-      color: #eff0f2; }
-    .bestseller__game .bestseller__pc {
-      background-color: #ffc247;
-      color: #eff0f2; }
-  .bestseller__name {
-    background-color: none;
-    color: #eff0f2;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1; }
-    .bestseller__name span {
-      display: block; }
-  .bestseller button span {
-    font-size: 2.2rem; }
-
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
-.home .switch__slider--left,
-.home .switch__slider--right,
-.home .playstation__slider--left,
-.home .playstation__slider--right,
-.home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
-  display: grid;
-  place-items: center; }
-
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -675,7 +593,7 @@ body {
       .home .playstation__title .switch__title--icon,
       .home .xbox__title .switch__title--icon {
         background-color: none;
-        color: #d52228; }
+        color: #dd4e53; }
       .home .pc__title .playstation__title--icon,
       .home .switch__title .playstation__title--icon,
       .home .playstation__title .playstation__title--icon,
@@ -857,17 +775,17 @@ body {
         font-size: 2.2rem;
         font-weight: 300; }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -901,17 +819,17 @@ body {
     width: 100%;
     height: auto; } }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -984,17 +902,17 @@ body {
     width: 100%;
     height: auto; } }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -1028,6 +946,16 @@ body {
     flex-direction: row;
     gap: 1rem;
     margin-top: 4rem; }
+    .cart__content .cart__empty {
+      border-radius: 1rem;
+      height: 342px;
+      width: calc(100% - 300px);
+      color: #a9b2bf;
+      border: 0.1rem solid #77738b; }
+    @media (max-width: 680px) {
+      .cart__content .cart__empty {
+        width: 100%;
+        height: 14rem; } }
     .cart__content .cart__showcase {
       display: flex;
       flex-direction: column;
@@ -1038,17 +966,6 @@ body {
       grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
       grid-auto-rows: auto;
       gap: 0.5rem; }
-      .cart__content .cart__showcase .cart__empty {
-        border-radius: 1rem;
-        height: 342px;
-        width: 100%;
-        color: #a9b2bf;
-        border: 0.1rem solid #77738b;
-        display: none !important; }
-      @media (max-width: 680px) {
-        .cart__content .cart__showcase--empty {
-          width: 100%;
-          height: 14rem; } }
     @media (max-width: 680px) {
       .cart__content .cart__showcase {
         width: 100%;
@@ -1074,7 +991,7 @@ body {
         background-color: #535862;
         color: none; }
       .cart__content .cart__card--start {
-        width: 6.3rem;
+        width: 7.2rem;
         height: 5.6rem; }
         .cart__content .cart__card--start img {
           width: auto;
@@ -1097,7 +1014,8 @@ body {
             background-color: #eff0f2; }
           .cart__content .cart__card--controls button span {
             font-weight: 500;
-            font-size: 1.4rem; }
+            font-size: 1.4rem;
+            color: #000000; }
         .cart__content .cart__card--controls p {
           width: 2.4rem;
           text-align: center; }
@@ -1105,9 +1023,11 @@ body {
         display: flex;
         flex-direction: row;
         gap: 1.6rem;
-        justify-content: center;
-        align-items: center; }
+        justify-content: flex-end;
+        align-items: center;
+        width: 7.2rem; }
         .cart__content .cart__card--end .cart__card--price {
+          text-align: end;
           line-height: 1; }
           .cart__content .cart__card--end .cart__card--price span {
             display: block;
@@ -1160,13 +1080,13 @@ body {
           width: 50%;
           text-shadow: none; }
         .cart__content .cart__summary .cart__buttons .cart__clear {
-          background-color: #d52228;
-          color: none; }
+          background-color: #dd4e53;
+          color: #000000; }
           .cart__content .cart__summary .cart__buttons .cart__clear:hover {
-            background-color: #dd4e53; }
+            background-color: #e47175; }
         .cart__content .cart__summary .cart__buttons .cart__checkout {
           background-color: #618bf8;
-          color: none; }
+          color: #000000; }
           .cart__content .cart__summary .cart__buttons .cart__checkout:hover {
             background-color: #81a2f9; }
       .cart__content .cart__summary .cart__payment {
@@ -1203,17 +1123,17 @@ body {
     width: 100%;
     height: auto; } }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 
@@ -1233,17 +1153,17 @@ body {
     height: auto;
     padding: 0 2rem; } }
 
-.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .bestseller__game p, .home .pc__slider--left, .home .pc__slider--right,
+.header, .header__container .header--left .header__logo, .nav__a, .nav__a p, .banner__container p, .banner__container--left, .banner__container--right, .home .pc__slider--left, .home .pc__slider--right,
 .home .switch__slider--left,
 .home .switch__slider--right,
 .home .playstation__slider--left,
 .home .playstation__slider--right,
 .home .xbox__slider--left,
-.home .xbox__slider--right, .cart__content .cart__showcase .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
+.home .xbox__slider--right, .cart__content .cart__empty, .cart__content .cart__summary .summary__title, .cart__content .cart__summary .cart__payment, footer {
   display: grid;
   place-items: center; }
 
-.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .bestseller, .bestseller button span, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
+.header__logo img, .header__search, .nav__a, .banner__container--right .banner__search, .banner__container--right .banner__store, .card, .card__bottom .card__cart span, .new, .new__img, .review, .store__showcase .store__menu span, .cart__content .cart__card, .cart__content .cart__card--controls button, .cart__content .cart__card--end .cart__card--delete span, .cart__content .cart__summary .cart__buttons .cart__clear,
 .cart__content .cart__summary .cart__buttons .cart__checkout {
   transition: all 0.3s; }
 

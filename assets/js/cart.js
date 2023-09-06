@@ -1,4 +1,5 @@
 /* SELECT ELEMENTS */
+const cartEmpty = document.querySelector(".cart__empty");
 const cartShowcase = document.querySelector(".cart__showcase");
 const cartCardQuantity = document.getElementById("cart__card--quantity");
 const navCartCount = document.getElementById("nav__cart--count");
@@ -20,7 +21,7 @@ const addToCart = (id) => {
       duration: 2000,
       style: {
         textShadow: "none",
-        background: "#d52228",
+        background: "#dd4e53",
         color: "#000000",
         fontWeight: "500",
         boxShadow: "none",
@@ -61,6 +62,7 @@ const addToCart = (id) => {
 
 /* UPDATE CART ITEMS */
 const updateCartItems = () => {
+  displayCartContent();
   displayNavCartCount();
   displayCartItems();
   displayItemCount();
@@ -89,7 +91,7 @@ const displayCartItems = () => {
           <button onclick="changeCartItemsQuantity('plus', ${item.id})"><span class="material-symbols-outlined">add</span></button>
         </div>
         <div class="cart__card--end">
-          <p class="cart__card--price">$${item.prices.final}<span>$${item.prices.base}</span></p>
+          <p class="cart__card--price">$${item.prices.final * item.quantity}<span>$${item.prices.base * item.quantity}</span></p>
           <button class="cart__card--delete" onclick="removeItemFromCart(${item.id})">
             <span class="material-symbols-outlined">delete</span>
           </button>
@@ -97,6 +99,17 @@ const displayCartItems = () => {
       </div>
     `;
   });
+};
+
+/* DISPLAY CART CONTENT */
+const displayCartContent = () => {
+  if (cart.length == 0) {
+    cartEmpty.style.display = "grid";
+    cartShowcase.style.display = "none";
+  } else {
+    cartEmpty.style.display = "none";
+    cartShowcase.style.display = "grid";
+  }
 };
 
 /* DISPLAY NAV'S CART COUNT */
@@ -112,7 +125,6 @@ const displayNavCartCount = () => {
       cartCount += item.quantity;
     });
     navCartCount.innerHTML = cartCount;
-
     navCartCount.style.display = "grid";
   }
 };

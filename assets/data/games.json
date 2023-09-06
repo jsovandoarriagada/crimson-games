@@ -7,8 +7,8 @@
       "title": "Diablo IV",
       "genres": ["Action RPG", "Adventure"],
       "prices": {
-        "base": 60,
-        "final": 54
+        "base": 40,
+        "final": 32
       }
     },
     {
@@ -18,8 +18,8 @@
       "title": "Final Fantasy XVI",
       "genres": ["Action RPG", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -29,8 +29,8 @@
       "title": "Street Fighter 6",
       "genres": ["Fighting", "Action"],
       "prices": {
-        "base": 40,
-        "final": 32
+        "base": 30,
+        "final": 27
       }
     },
     {
@@ -41,7 +41,7 @@
       "genres": ["Action", "Adventure"],
       "prices": {
         "base": 40,
-        "final": 50
+        "final": 36
       }
     },
     {
@@ -51,8 +51,8 @@
       "title": "Horizon: Forbidden West",
       "genres": ["Action RPG", "Adventure"],
       "prices": {
-        "base": 60,
-        "final": 54
+        "base": 30,
+        "final": 15
       }
     },
     {
@@ -62,8 +62,8 @@
       "title": "Demon's Souls",
       "genres": ["Action RPG", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 35
+        "base": 30,
+        "final": 27
       }
     },
     {
@@ -74,7 +74,7 @@
       "genres": ["Racing", "Sports"],
       "prices": {
         "base": 40,
-        "final": 32
+        "final": 28
       }
     },
     {
@@ -84,8 +84,8 @@
       "title": "Ratchet & Clank: Rift Apart",
       "genres": ["Platform", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 40,
+        "final": 20
       }
     },
     {
@@ -106,8 +106,8 @@
       "title": "Honkai Star Rail",
       "genres": ["RPG", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 30,
+        "final": 15
       }
     },
     {
@@ -128,8 +128,8 @@
       "title": "Spider-Man: Miles Morales",
       "genres": ["Fighting", "Platform"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 30,
+        "final": 24
       }
     },
     {
@@ -139,8 +139,8 @@
       "title": "Legacy of Thieves",
       "genres": ["Platform", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 35
+        "base": 30,
+        "final": 24
       }
     },
     {
@@ -150,8 +150,8 @@
       "title": "The Last of Us",
       "genres": ["Shooter", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 30,
+        "final": 27
       }
     },
     {
@@ -162,7 +162,7 @@
       "genres": ["Shooter", "Adventure"],
       "prices": {
         "base": 30,
-        "final": 15
+        "final": 24
       }
     },
     {
@@ -173,7 +173,7 @@
       "genres": ["Action", "Adventure"],
       "prices": {
         "base": 30,
-        "final": 24
+        "final": 21
       }
     },
     {
@@ -183,8 +183,8 @@
       "title": "Ciberpunk 2077",
       "genres": ["RPG", "Shooter"],
       "prices": {
-        "base": 50,
-        "final": 35
+        "base": 30,
+        "final": 15
       }
     },
     {
@@ -194,8 +194,8 @@
       "title": "Sackboy: A Big Adventure",
       "genres": ["Platform", "Adventure"],
       "prices": {
-        "base": 60,
-        "final": 48
+        "base": 40,
+        "final": 20
       }
     },
     {
@@ -205,8 +205,8 @@
       "title": "Tears of the Kingdom",
       "genres": ["Adventure", "Action"],
       "prices": {
-        "base": 60,
-        "final": 48
+        "base": 40,
+        "final": 24
       }
     },
     {
@@ -216,8 +216,8 @@
       "title": "Super Mario Odyssey",
       "genres": ["Adventure", "Platform"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -227,8 +227,8 @@
       "title": "Animal Crossing",
       "genres": ["Social Simulation", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 40,
+        "final": 32
       }
     },
     {
@@ -238,8 +238,8 @@
       "title": "Super Smash Bros. Ultimate",
       "genres": ["Adventure", "Platform"],
       "prices": {
-        "base": 60,
-        "final": 42
+        "base": 30,
+        "final": 27
       }
     },
     {
@@ -271,8 +271,8 @@
       "title": "Breath of the Wild",
       "genres": ["Adventure", "Action"],
       "prices": {
-        "base": 60,
-        "final": 48
+        "base": 40,
+        "final": 24
       }
     },
     {
@@ -282,7 +282,7 @@
       "title": "Nightmare Reaper",
       "genres": ["Shooter", "Action"],
       "prices": {
-        "base": 45,
+        "base": 40,
         "final": 36
       }
     },
@@ -293,8 +293,8 @@
       "title": "Xenoblade Chronicles",
       "genres": ["Action RPG", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 40,
+        "final": 32
       }
     },
     {
@@ -304,8 +304,8 @@
       "title": "Winter's Wish: Spirits of Edo",
       "genres": ["Adventure", "Visual Novel"],
       "prices": {
-        "base": 27,
-        "final": 30
+        "base": 30,
+        "final": 27
       }
     },
     {
@@ -315,7 +315,7 @@
       "title": "Dragon Ball: Xenoverse 2",
       "genres": ["Fighting", "Adventure"],
       "prices": {
-        "base": 45,
+        "base": 40,
         "final": 36
       }
     },
@@ -326,8 +326,8 @@
       "title": "Kirby and the Forgotten Land",
       "genres": ["Adventure", "Platform"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -337,8 +337,8 @@
       "title": "Super Mario Party",
       "genres": ["Party", "Multiplayer"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 40,
+        "final": 32
       }
     },
     {
@@ -348,8 +348,8 @@
       "title": "Pokémon: Shining Pearl",
       "genres": ["RPG", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -359,8 +359,8 @@
       "title": "Pac-Man World",
       "genres": ["Platform", "Adventure"],
       "prices": {
-        "base": 40,
-        "final": 28
+        "base": 30,
+        "final": 27
       }
     },
     {
@@ -370,8 +370,8 @@
       "title": "Mario Kart 8 Deluxe",
       "genres": ["Racing", "Action"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 30,
+        "final": 24
       }
     },
     {
@@ -381,8 +381,8 @@
       "title": "Luigi's Mansion: Dark Moon",
       "genres": ["Adventure", "Action"],
       "prices": {
-        "base": 60,
-        "final": 54
+        "base": 30,
+        "final": 24
       }
     },
     {
@@ -392,8 +392,8 @@
       "title": "Bayonetta 3",
       "genres": ["Adventure", "Action"],
       "prices": {
-        "base": 40,
-        "final": 36
+        "base": 30,
+        "final": 21
       }
     },
     {
@@ -447,8 +447,8 @@
       "title": "Gears 5",
       "genres": ["Shooter", "Action"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -459,7 +459,7 @@
       "genres": ["Platform", "Adventure"],
       "prices": {
         "base": 30,
-        "final": 24
+        "final": 15
       }
     },
     {
@@ -469,8 +469,8 @@
       "title": "Sea of Thieves",
       "genres": ["Fighting", "Action"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 40,
+        "final": 20
       }
     },
     {
@@ -480,8 +480,8 @@
       "title": "Halo Infinite",
       "genres": ["Shooter", "Adventure"],
       "prices": {
-        "base": 60,
-        "final": 42
+        "base": 40,
+        "final": 20
       }
     },
     {
@@ -491,8 +491,8 @@
       "title": "Elden Ring",
       "genres": ["Adventure", "Action"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -513,8 +513,8 @@
       "title": "Star Wars: Jedi Survivor",
       "genres": ["Action", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 30,
+        "final": 21
       }
     },
     {
@@ -524,8 +524,8 @@
       "title": "Halo Infinite",
       "genres": ["Shooter", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 30,
+        "final": 21
       }
     },
     {
@@ -557,8 +557,8 @@
       "title": "Sonic Frontiers",
       "genres": ["Platform", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 40,
+        "final": 28
       }
     },
     {
@@ -590,8 +590,8 @@
       "title": "AEW: Fight Forever",
       "genres": ["Fighting", "Sports"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -601,8 +601,8 @@
       "title": "Octopath Traveler II",
       "genres": ["RPG", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 30,
+        "final": 27
       }
     },
     {
@@ -612,8 +612,8 @@
       "title": "Dead Cells",
       "genres": ["Platform", "Adventure"],
       "prices": {
-        "base": 40,
-        "final": 36
+        "base": 30,
+        "final": 15
       }
     },
     {
@@ -623,8 +623,8 @@
       "title": "Mortal Kombat 1",
       "genres": ["Fighting", "Action"],
       "prices": {
-        "base": 60,
-        "final": 42
+        "base": 30,
+        "final": 18
       }
     },
     {
@@ -634,8 +634,8 @@
       "title": "Age of Wonders 4",
       "genres": ["Strategy", "Fantasy"],
       "prices": {
-        "base": 60,
-        "final": 50
+        "base": 30,
+        "final": 15
       }
     },
     {
@@ -678,8 +678,8 @@
       "title": "Howgwarts Legacy",
       "genres": ["Action RPG", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -689,8 +689,8 @@
       "title": "Killer Frequency",
       "genres": ["Puzzle", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 40,
+        "final": 36
       }
     },
     {
@@ -700,8 +700,8 @@
       "title": "Protodroid Delta",
       "genres": ["Platform", "Shooter"],
       "prices": {
-        "base": 50,
-        "final": 35
+        "base": 40,
+        "final": 32
       }
     },
     {
@@ -711,8 +711,8 @@
       "title": "Exoprimal",
       "genres": ["Shooter", "Fighting"],
       "prices": {
-        "base": 60,
-        "final": 48
+        "base": 40,
+        "final": 28
       }
     },
     {
@@ -723,7 +723,7 @@
       "genres": ["Rhythm", "Platform"],
       "prices": {
         "base": 40,
-        "final": 36
+        "final": 20
       }
     },
     {
@@ -733,8 +733,8 @@
       "title": "Alien Dawn",
       "genres": ["Simulation", "Strategy"],
       "prices": {
-        "base": 40,
-        "final": 32
+        "base": 30,
+        "final": 27
       }
     },
     {
@@ -777,8 +777,8 @@
       "title": "Trepang²",
       "genres": ["Shooter", "Action"],
       "prices": {
-        "base": 50,
-        "final": 45
+        "base": 30,
+        "final": 24
       }
     },
     {
@@ -788,8 +788,8 @@
       "title": "Ghost Trick",
       "genres": ["Puzzle", "Adventure"],
       "prices": {
-        "base": 50,
-        "final": 40
+        "base": 30,
+        "final": 15
       }
     }
   ]

@@ -28,28 +28,27 @@
     @include flex-direction(row, $small);
     margin-top: 4rem;
 
+    // CART: EMPTY
+    .cart__empty {
+      @extend %grid-center;
+      border-radius: $small;
+      height: 342px;
+      width: calc(100% - 300px);
+      color: $cadet-blue;
+      border: 0.1rem solid $topaz;
+    }
+
+    @media (max-width: 680px) {
+      .cart__empty {
+        @include dimensions(100%, 14rem);
+      }
+    }
+
     // CART: SHOWCASE
     .cart__showcase {
       @include flex-direction(column, $x-small);
       @include dimensions(calc(100% - 300px), max-content);
       @include grid-template(32rem, $x-small);
-
-      // CART: EMPTY
-      .cart__empty {
-        @extend %grid-center;
-        border-radius: $small;
-        height: 342px;
-        width: 100%;
-        color: $cadet-blue;
-        border: 0.1rem solid $topaz;
-        display: none !important;
-      }
-
-      @media (max-width: 680px) {
-        &--empty {
-          @include dimensions(100%, 14rem);
-        }
-      }
     }
 
     @media (max-width: 680px) {
@@ -79,7 +78,7 @@
 
       // CART: CARD -- START
       &--start {
-        @include dimensions(6.3rem, 5.6rem);
+        @include dimensions(7.2rem, 5.6rem);
 
         img {
           @include dimensions(auto, 5.6rem);
@@ -108,6 +107,7 @@
           span {
             font-weight: 500;
             font-size: 1.4rem;
+            color: #000000;
           }
         }
 
@@ -120,9 +120,11 @@
       // CART: CARD -- END
       &--end {
         @include flex-direction(row, $medium);
-        @include flex-alignment(center, center);
+        @include flex-alignment(flex-end, center);
+        width: 7.2rem;
 
         .cart__card--price {
+          text-align: end;
           line-height: 1;
 
           span {
@@ -199,7 +201,7 @@
         }
 
         .cart__clear {
-          @include colors($guardsman-red, none);
+          @include colors($guardsman-red, #000000);
 
           &:hover {
             background-color: $guardsman-red-hover;
@@ -207,7 +209,7 @@
         }
 
         .cart__checkout {
-          @include colors($cornflower-blue, none);
+          @include colors($cornflower-blue, #000000);
 
           &:hover {
             background-color: $cornflower-blue-hover;
