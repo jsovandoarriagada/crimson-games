@@ -4,6 +4,7 @@
   <head>
     <!-- HEAD: META -->
     <meta charset="UTF-8" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Crimson Games" />
@@ -168,7 +169,31 @@
               <span class="material-symbols-outlined news__title--icon">newspaper</span>
             </div>
             <!-- NEWS: SHOWCASE -->
-            <div class="news__showcase"></div>
+            <div class="news__showcase">
+              <div class="new" onclick="openModal()">
+                <img src="./assets/img/news/sea-of-stars.webp" class="new__img" alt="Sea of Stars" />
+                <div class="new__text">
+                  <p class="new__date">August 28, 2023</p>
+                  <p class="new__title">Sea of Stars</p>
+                </div>
+              </div>
+              <div class="new__content hidden">
+                <figure class="new__figure">
+                  <img src="./assets/img/news/sea-of-stars-modal.webp" alt="Sea of Stars" />
+                  <div class="new__figure--close" onclick="openModal()"><span class="material-symbols-outlined">close</span></div>
+                </figure>
+                <div class="new__body">
+                  <p class="new__body--date">August 29, 2023</p>
+                  <p class="new__body--title">Sea of Stars</p>
+                  <p class="new__body--subtitle">The brand-new RPG adventure is finally here!</p>
+
+                  <p class="new__body--text">
+                    "Sea of Stars tells the story of two Children of the Solstice who combine the powers of the sun and moon to perform Eclipse Magic—the only
+                    force capable of fighting off the monstrous creations of an evil alchemist known as The Fleshmancer."
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
           <!-- REVIEWS -->
           <section class="reviews">
@@ -273,10 +298,34 @@
             <p>Cart</p>
             <span class="material-symbols-outlined">shopping_cart</span>
           </div>
+          <!-- STATUS -->
+          <div class="status">
+            <div class="status--left">
+              <div class="status__cart">
+                <p>1</p>
+                <p>Cart</p>
+                <span class="material-symbols-outlined">trending_flat</span>
+              </div>
+              <div class="status__checkout">
+                <p>2</p>
+                <p>Checkout</p>
+                <span class="material-symbols-outlined">trending_flat</span>
+              </div>
+              <div class="status__activation">
+                <p>3</p>
+                <p>Activation</p>
+              </div>
+            </div>
+            <div class="status--right">
+              <span class="material-symbols-outlined">lock</span>
+            </div>
+          </div>
           <!-- CART: CONTENT -->
           <div class="cart__content">
             <!-- CART: EMPTY -->
             <p class="cart__empty">YOUR CART IS EMPTY</p>
+            <!-- CART: CHECKOUT -->
+            <p class="cart__checkout">COMING SOON...</p>
             <!-- CART: SHOWCASE -->
             <div class="cart__showcase"></div>
             <!-- CART: SUMMARY -->
@@ -314,8 +363,8 @@
               </div>
               <!-- CART: BUTTONS -->
               <div class="cart__buttons">
-                <button class="cart__clear" onclick="clearCartItems()">CLEAR</button>
-                <button class="cart__checkout">CHECKOUT</button>
+                <button class="cart__buttons--clear" onclick="clearCartItems()">CLEAR</button>
+                <button class="cart__buttons--checkout" onclick="displayCheckout()">CHECKOUT</button>
               </div>
               <!-- CART: PAYMENT -->
               <div class="cart__payment">
@@ -345,8 +394,9 @@
       </main>
       <!-- FOOTER -->
       <footer>
-        <p>© 2023 Crimson Games, All Rights Reserved.<span>Crafted with ❤️ by José Simón Ovando A.</span></p>
+        <p>© Crimson Games, All Rights Reserved.<span>Crafted with ❤️ by José Simón Ovando A.</span></p>
       </footer>
+      <div class="layout__overlay hidden"></div>
     </div>
     <!-- BODY: SCRIPTS -->
     <script src="./assets/js/navigation.js"></script>

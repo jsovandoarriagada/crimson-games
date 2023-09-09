@@ -1,4 +1,3 @@
-@import "../utilities/extends";
 @import "../utilities/mixins";
 @import "../utilities/variables";
 
@@ -8,6 +7,7 @@
   @include flex-direction(column, $small);
   position: relative;
   border-radius: $small;
+  cursor: pointer;
 
   &:hover {
     @include shadow-inset($xx-small, $yellow-orange);
@@ -25,14 +25,116 @@
     left: 0;
     bottom: 0;
     padding: $small;
+    line-height: 1.3;
 
     .new__date {
-      color: $athens-gray;
+      color: $cadet-blue;
     }
 
     .new__title {
-      @include colors(none, $yellow-orange);
+      @include colors(none, $athens-gray);
       text-shadow: 0.1rem 0.1rem black;
     }
+  }
+}
+
+.new__content {
+  @extend %default-transition;
+  width: 40rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  gap: $small;
+  background-color: $mako;
+  border-radius: $small;
+  font-weight: 300;
+  max-height: 420px;
+
+  &.hidden {
+    display: none;
+  }
+
+  figure {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $small;
+    }
+
+    .new__figure--close {
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      height: 2.8rem;
+      width: 2.8rem;
+      @extend %grid-center;
+      position: absolute;
+      z-index: 20;
+      cursor: pointer;
+      pointer-events: all;
+
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .new__body {
+    margin: 0 $x-small $small $small;
+    text-align: center;
+    overflow-y: scroll;
+
+    &--date {
+      color: $cadet-blue;
+    }
+
+    &--title {
+      font-weight: 400;
+    }
+
+    &--subtitle {
+      color: $cadet-blue;
+    }
+
+    &--iframe {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      padding-top: 56.25%;
+
+      iframe {
+        margin-top: $regular;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    }
+
+    &--text {
+      margin-top: $regular;
+      font-size: $regular;
+      line-height: 1.3;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .new__content {
+    width: calc(100% - 4rem);
   }
 }

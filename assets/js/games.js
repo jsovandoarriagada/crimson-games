@@ -1,19 +1,15 @@
-/* SELECT ELEMENTS */
 const playstationCards = document.querySelector(".playstation__cards");
 const switchCards = document.querySelector(".switch__cards");
 const storeCards = document.querySelector(".store__cards");
 const xboxCards = document.querySelector(".xbox__cards");
 const pcCards = document.querySelector(".pc__cards");
 
-/* GAMES ARRAYS */
 let playstationGames = [];
 let switchGames = [];
 let xboxGames = [];
 let pcGames = [];
 let games = [];
 
-/* LOAD GAMES FROM GAMES.JSON USING FETCH, READ AND PARSE THEM USING JSON(), PUSH THE RESULT 
-INTO GAMES ARRAY, THEN RENDER IT BY CALLING DISPLAYHOMEGAMES() AND DISPLAYSTOREGAMES() */
 const loadGames = async () => {
   const response = await fetch("./assets/data/games.json");
   const data = await response.json();
@@ -22,36 +18,23 @@ const loadGames = async () => {
   displayStoreGames();
 };
 
-/* DISPLAY HOME SECTION'S GAMES */
 const displayHomeGames = () => {
-  /* ITERATE OVER GAMES ARRAY */
   for (let i = 0; i < games.length; i++) {
-    /* CHECK IF CURRENT GAME'S PLATFORM IS PLAYSTATION, 
-    IF IT'S TRUE THEN PUSH IT TO PLAYSTATION GAMES ARRAY */
     if (games[i].platform == "playstation") {
       playstationGames.push(games[i]);
     }
-    /* CHECK IF CURRENT GAME'S PLATFORM IS SWITCH, 
-    IF IT'S TRUE THEN PUSH IT TO SWITCH GAMES ARRAY */
     if (games[i].platform == "switch") {
       switchGames.push(games[i]);
     }
-    /* CHECK IF CURRENT GAME'S PLATFORM IS XBOX, 
-    IF IT'S TRUE THEN PUSH IT TO XBOX GAMES ARRAY */
     if (games[i].platform == "xbox") {
       xboxGames.push(games[i]);
     }
-    /* CHECK IF CURRENT GAME'S PLATFORM IS PC, 
-    IF IT'S TRUE THEN PUSH IT TO PC GAMES ARRAY */
     if (games[i].platform == "pc") {
       pcGames.push(games[i]);
     }
   }
 
-  /* ITERATE OVER PLAYSTATION, SWITCH, XBOX 
-  AND PC GAMES ARRAYS 9 TIMES EACH ONE */
   for (let i = 0; i < 9; i++) {
-    /* PUSH A CARD TEMPLATE OF THE CURRENT GAME INTO PLAYSTATION CARDS */
     playstationCards.innerHTML += `
         <div class="card">
           <img src="${playstationGames[i].image}" draggable="false" class="card__image" alt="${playstationGames[i].title}" />
@@ -65,14 +48,18 @@ const displayHomeGames = () => {
               <p class="card__price--final">${playstationGames[i].prices.final}</p>
               <p class="card__price--base">${playstationGames[i].prices.base}</p>
             </div>
+            <div class="card__buttons">
+            <button class="card__info">
+              <span class="material-symbols-outlined">info</span>
+            </button>
             <button class="card__cart" onclick="addToCart(${playstationGames[i].id})">
               <span class="material-symbols-outlined">shopping_cart</span>
             </button>
           </div>
+          </div>
         </div>
         `;
 
-    /* PUSH A CARD TEMPLATE OF THE CURRENT GAME INTO SWITCH CARDS */
     switchCards.innerHTML += `
     <div class="card">
       <img src="${switchGames[i].image}" draggable="false" class="card__image" alt="${switchGames[i].title}" />
@@ -86,14 +73,18 @@ const displayHomeGames = () => {
           <p class="card__price--final">${switchGames[i].prices.final}</p>
           <p class="card__price--base">${switchGames[i].prices.base}</p>
         </div>
-        <button class="card__cart" onclick="addToCart(${switchGames[i].id})">
-          <span class="material-symbols-outlined">shopping_cart</span>
-        </button>
+        <div class="card__buttons">
+          <button class="card__info">
+            <span class="material-symbols-outlined">info</span>
+          </button>
+          <button class="card__cart" onclick="addToCart(${switchGames[i].id})">
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </button>
+        </div>
       </div>
     </div>
     `;
 
-    /* PUSH A CARD TEMPLATE OF THE CURRENT GAME INTO XBOX CARDS */
     xboxCards.innerHTML += `
     <div class="card">
       <img src="${xboxGames[i].image}" draggable="false" class="card__image" alt="${xboxGames[i].title}" />
@@ -107,14 +98,18 @@ const displayHomeGames = () => {
           <p class="card__price--final">${xboxGames[i].prices.final}</p>
           <p class="card__price--base">${xboxGames[i].prices.base}</p>
         </div>
-        <button class="card__cart" onclick="addToCart(${xboxGames[i].id})">
-          <span class="material-symbols-outlined">shopping_cart</span>
-        </button>
+        <div class="card__buttons">
+          <button class="card__info">
+            <span class="material-symbols-outlined">info</span>
+          </button>
+          <button class="card__cart" onclick="addToCart(${xboxGames[i].id})">
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </button>
+        </div>
       </div>
     </div>
     `;
 
-    /* PUSH A CARD TEMPLATE OF THE CURRENT GAME INTO PC CARDS */
     pcCards.innerHTML += `
     <div class="card">
       <img src="${pcGames[i].image}" draggable="false" class="card__image" alt="${pcGames[i].title}" />
@@ -128,17 +123,20 @@ const displayHomeGames = () => {
           <p class="card__price--final">${pcGames[i].prices.final}</p>
           <p class="card__price--base">${pcGames[i].prices.base}</p>
         </div>
-        <button class="card__cart" onclick="addToCart(${pcGames[i].id})">
-          <span class="material-symbols-outlined">shopping_cart</span>
-        </button>
+        <div class="card__buttons">
+          <button class="card__info">
+            <span class="material-symbols-outlined">info</span>
+          </button>
+          <button class="card__cart" onclick="addToCart(${pcGames[i].id})">
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </button>
+        </div>
       </div>
     </div>
     `;
   }
 };
 
-/* ITERATE OVER GAMES ARRAY, THEN PUSH A CARD 
-TEMPLATE OF THE CURRENT GAME INTO STORE CARDS */
 const displayStoreGames = () => {
   games.forEach((game) => {
     storeCards.innerHTML += `
@@ -150,14 +148,18 @@ const displayStoreGames = () => {
           <p class="card__price--final">${game.prices.final}</p>
           <p class="card__price--base">${game.prices.base}</p>
         </div>
-        <button class="card__cart" onclick="addToCart(${game.id})">
-          <span class="material-symbols-outlined">shopping_cart</span>
-        </button>
+        <div class="card__buttons">
+          <button class="card__info">
+            <span class="material-symbols-outlined">info</span>
+          </button>
+          <button class="card__cart" onclick="addToCart(${game.id})">
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </button>
+        </div>
       </div>
     </div>
     `;
   });
 };
 
-/* RUN LOADGAMES() */
 loadGames();

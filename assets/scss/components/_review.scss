@@ -1,6 +1,6 @@
-@import '../utilities/extends';
-@import '../utilities/mixins';
-@import '../utilities/variables';
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../utilities/variables";
 
 /* REVIEW */
 .review {
@@ -25,7 +25,7 @@
 
     // REVIEW: USER
     .review__user {
-      @include flex-direction(row, $xx-small);
+      @include flex-direction(row, $x-small);
       @include flex-alignment(center, center);
 
       span {
@@ -46,5 +46,6 @@
   // REVIEW: BODY
   &__body {
     @include colors(none, $cadet-blue);
+    line-height: 1.3;
   }
 }

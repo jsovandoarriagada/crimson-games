@@ -9,8 +9,8 @@
   @include colors($shark, none);
   max-width: 100%;
   position: sticky;
-  z-index: 10;
   top: 0;
+  z-index: 10;
 
   &__container {
     @include dimensions(120rem, 6rem);

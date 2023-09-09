@@ -11,8 +11,10 @@ body {
   @include colors($baltic-sea, $athens-gray);
   @include font($regular, 400);
   font-family: "Poppins", sans-serif;
-  text-shadow: 0.1rem 0.1rem black;
   overflow-y: scroll;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   a {
     @include colors(none, $athens-gray);
@@ -54,5 +56,31 @@ body {
     @include flex-direction(column, 0);
     @include flex-alignment(center, center);
     max-width: 100%;
+
+    &__overlay {
+      min-height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 0 0 1000vmax rgba(0, 0, 0, 0.5);
+      pointer-events: none !important;
+
+      &.hidden {
+        display: none;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $shark;
+    border-radius: 1rem;
   }
 }

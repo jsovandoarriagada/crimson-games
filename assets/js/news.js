@@ -1,11 +1,7 @@
-/* SELECT ELEMENT */
 const newsShowcase = document.querySelector(".news__showcase");
 
-/* NEWS ARRAY */
 let news = [];
 
-/* LOAD NEWS FROM NEWS.JSON USING FETCH, READ AND PARSE THEM USING JSON(), 
-PUSH THE RESULT INTO NEWS ARRAY, THEN RENDER IT BY CALLING DISPLAYNEWS()*/
 const loadNews = async () => {
   const response = await fetch("./assets/data/news.json");
   const data = await response.json();
@@ -13,8 +9,6 @@ const loadNews = async () => {
   displayNews();
 };
 
-/* ITERATE OVER NEWS ARRAY, THEN PUSH A CARD 
-TEMPLATE OF THE CURRENT NEW INTO NEWS SHOWCASE */
 const displayNews = () => {
   news.forEach((latestNew) => {
     newsShowcase.innerHTML += `
@@ -29,5 +23,11 @@ const displayNews = () => {
   });
 };
 
-/* RUN LOADNEWS()*/
 loadNews();
+
+const openModal = () => {
+  document.querySelector(".layout__overlay").classList.toggle("hidden");
+  document.querySelector(".new__content").classList.toggle("hidden");
+};
+
+console.log("lol");

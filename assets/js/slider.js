@@ -1,4 +1,3 @@
-/* SELECT ELEMENTS */
 const switchControlLeft = document.querySelector(".switch__slider--left");
 const switchControlRight = document.querySelector(".switch__slider--right");
 const playstationControlLeft = document.querySelector(".playstation__slider--left");
@@ -8,8 +7,6 @@ const xboxControlRight = document.querySelector(".xbox__slider--right");
 const pcControlLeft = document.querySelector(".pc__slider--left");
 const pcControlRight = document.querySelector(".pc__slider--right");
 
-/* ADD EVENT LISTENER TO PLAYSTATION, SWITCH, XBOX AND PC'S LEFT CONTROL, 
-ON CLICK IT SCROLLS ONE CARD TO LEFT IN THE CURRENT SLIDER */
 playstationControlLeft.addEventListener("click", () => {
   playstationCards.scrollLeft -= 300;
 });
@@ -26,8 +23,6 @@ pcControlLeft.addEventListener("click", () => {
   pcCards.scrollLeft -= 300;
 });
 
-/* ADD EVENT LISTENER TO PLAYSTATION, SWITCH, XBOX AND PC'S RIGHT CONTROL, 
-ON CLICK IT SCROLLS ONE CARD TO RIGHT IN THE CURRENT SLIDER */
 playstationControlRight.addEventListener("click", () => {
   playstationCards.scrollLeft += 300;
 });
@@ -44,7 +39,6 @@ pcControlRight.addEventListener("click", () => {
   pcCards.scrollLeft += 300;
 });
 
-/* TOUCH SLIDER */
 let startX = 0;
 let grab = false;
 

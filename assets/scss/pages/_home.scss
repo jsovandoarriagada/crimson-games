@@ -18,7 +18,7 @@
     max-width: 100%;
     margin-top: $xxx-large;
 
-    // NEWS: TITLE
+    // PC, SWITCH, PLAYSTATION & XBOX: TITLE
     &__title {
       @include flex-direction(row, $small);
       @include flex-alignment(center, center);
@@ -125,9 +125,9 @@
       margin-top: $xxx-large;
     }
 
-    @media (max-width: 42.5rem) {
+    @media (max-width: 720px) {
       &__showcase {
-        grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+        @include grid-template(28rem, $small);
       }
     }
   }
@@ -153,7 +153,7 @@
 
     // REVIEWS: SHOWCASE
     &__showcase {
-      @include grid-template(32rem, $small);
+      @include grid-template(30rem, $small);
       margin-top: $xxx-large;
     }
 

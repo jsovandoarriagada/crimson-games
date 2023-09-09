@@ -1,6 +1,6 @@
-@import '../utilities/extends';
-@import '../utilities/mixins';
-@import '../utilities/variables';
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../utilities/variables";
 
 /* CARD */
 .card {
@@ -19,7 +19,7 @@
   }
 
   img {
-    border-radius: $small $small 0 0;
+    border-radius: $small;
   }
 }
 
@@ -64,23 +64,31 @@
     text-decoration: line-through;
   }
 
-  // CARD: CART
-  .card__cart {
-    @include colors(transparent, $athens-gray);
-    margin-right: $small;
-    margin-bottom: $small;
-    outline: none;
-    padding: 0;
+  .card__buttons {
+    @include flex-direction(row, $x-small);
+    // CARD: CART
+    .card__info,
+    .card__cart {
+      @include colors(transparent, $athens-gray);
 
-    span {
-      @extend %default-transition;
-      @include colors(transparent, $cadet-blue);
-      @include font($xx-large, 300);
-      cursor: pointer;
+      margin-bottom: $small;
+      outline: none;
+      padding: 0;
 
-      &:hover {
-        @include colors(transparent, $athens-gray);
+      span {
+        @extend %default-transition;
+        @include colors(transparent, $cadet-blue);
+        @include font($xx-large, 300);
+        cursor: pointer;
+
+        &:hover {
+          @include colors(transparent, $athens-gray);
+        }
       }
+    }
+
+    .card__cart {
+      margin-right: $small;
     }
   }
 }
