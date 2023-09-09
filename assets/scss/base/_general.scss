@@ -30,7 +30,6 @@ body {
     @include flex-alignment(center, center);
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    text-shadow: 0.1rem 0.1rem black;
     border-radius: $small;
     padding: $small;
     border: none;
