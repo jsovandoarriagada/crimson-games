@@ -49,13 +49,15 @@ const displayHomeGames = () => {
               <p class="card__price--base">${playstationGames[i].prices.base}</p>
             </div>
             <div class="card__buttons">
-            <button class="card__info">
-              <span class="material-symbols-outlined">info</span>
-            </button>
-            <button class="card__cart" onclick="addToCart(${playstationGames[i].id})">
-              <span class="material-symbols-outlined">shopping_cart</span>
-            </button>
-          </div>
+              <!--
+              <button class="card__info">
+                <span class="material-symbols-outlined">info</span>
+              </button>
+              -->
+              <button class="card__cart" onclick="addToCart(${playstationGames[i].id})">
+                <span class="material-symbols-outlined">shopping_cart</span>
+              </button>
+            </div>
           </div>
         </div>
         `;
@@ -74,9 +76,11 @@ const displayHomeGames = () => {
           <p class="card__price--base">${switchGames[i].prices.base}</p>
         </div>
         <div class="card__buttons">
+          <!--
           <button class="card__info">
             <span class="material-symbols-outlined">info</span>
           </button>
+          -->
           <button class="card__cart" onclick="addToCart(${switchGames[i].id})">
             <span class="material-symbols-outlined">shopping_cart</span>
           </button>
@@ -99,9 +103,11 @@ const displayHomeGames = () => {
           <p class="card__price--base">${xboxGames[i].prices.base}</p>
         </div>
         <div class="card__buttons">
+          <!--
           <button class="card__info">
             <span class="material-symbols-outlined">info</span>
           </button>
+          -->
           <button class="card__cart" onclick="addToCart(${xboxGames[i].id})">
             <span class="material-symbols-outlined">shopping_cart</span>
           </button>
@@ -124,9 +130,11 @@ const displayHomeGames = () => {
           <p class="card__price--base">${pcGames[i].prices.base}</p>
         </div>
         <div class="card__buttons">
+          <!--
           <button class="card__info">
             <span class="material-symbols-outlined">info</span>
           </button>
+          -->
           <button class="card__cart" onclick="addToCart(${pcGames[i].id})">
             <span class="material-symbols-outlined">shopping_cart</span>
           </button>
@@ -149,9 +157,11 @@ const displayStoreGames = () => {
           <p class="card__price--base">${game.prices.base}</p>
         </div>
         <div class="card__buttons">
+          <!--
           <button class="card__info">
             <span class="material-symbols-outlined">info</span>
-          </button>
+          </button
+          -->
           <button class="card__cart" onclick="addToCart(${game.id})">
             <span class="material-symbols-outlined">shopping_cart</span>
           </button>
